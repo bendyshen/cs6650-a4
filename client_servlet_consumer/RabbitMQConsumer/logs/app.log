@@ -1,0 +1,481 @@
+2025-04-14 02:20:31:409 [main] INFO  ConsumerRunner - rabbitmq connection pool initialization successful
+2025-04-14 02:20:36:609 [main] INFO  ConsumerRunner - redis connection pool initialization successful
+2025-04-14 02:20:36:682 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[52.27.240.223:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-04-14 02:20:36:712 [main] INFO  ConsumerRunner - simulation started
+2025-04-14 02:20:36:713 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:716 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:716 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:716 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:716 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:716 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:717 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:717 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:717 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:717 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:717 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:718 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:718 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:718 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:718 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:718 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:718 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:719 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:719 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:719 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:719 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:720 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:720 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:720 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:720 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:720 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:721 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:721 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:721 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:721 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:722 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:722 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:722 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:722 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:722 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:722 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:722 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:722 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:723 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:723 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:723 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:723 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:724 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:724 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:724 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:724 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:724 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:724 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:724 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:725 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:725 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:725 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:725 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:725 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:725 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:725 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:726 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:726 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:726 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:726 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:727 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:727 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:727 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:727 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:727 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:727 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:727 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:728 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:728 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:728 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:728 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:728 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:728 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:728 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:729 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:729 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:729 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:729 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:729 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:729 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:729 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:729 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:730 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:730 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:730 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:730 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:730 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:730 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:731 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:731 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:731 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:731 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:732 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:732 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:733 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:733 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:733 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:733 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:733 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:733 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:734 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:734 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:734 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:734 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:734 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:735 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:735 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:735 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:735 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:735 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:735 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:736 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:736 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:736 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:736 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:736 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:737 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:737 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:737 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:737 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:738 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:738 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:738 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:738 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:738 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:739 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:739 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:739 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:739 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:739 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:739 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:740 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:740 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:740 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:740 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:740 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:740 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:741 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:741 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:741 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:741 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:741 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:741 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:742 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:742 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:742 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:742 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:742 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:742 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:742 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:742 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:743 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:743 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:743 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:743 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:743 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:743 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:743 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:743 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:744 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:744 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:744 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:744 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:744 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:744 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:745 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:745 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:745 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:745 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:745 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:745 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:746 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:746 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:746 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:746 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:746 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:746 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:746 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:747 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:747 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:747 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:747 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:747 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:747 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:748 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:748 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:748 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:748 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:749 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:749 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:749 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:749 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:749 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:749 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:749 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:750 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:750 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:750 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:750 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 02:20:36:750 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 02:20:36:760 [cluster-rtt-ClusterId{value='67fcd3642d1d885259d3817d', description='null'}-52.27.240.223:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:81}] to 52.27.240.223:27017
+2025-04-14 02:20:36:760 [cluster-ClusterId{value='67fcd3642d1d885259d3817d', description='null'}-52.27.240.223:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:80}] to 52.27.240.223:27017
+2025-04-14 02:20:36:760 [cluster-ClusterId{value='67fcd3642d1d885259d3817d', description='null'}-52.27.240.223:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=52.27.240.223:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32876575}
+2025-04-14 02:20:36:864 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:82}] to 52.27.240.223:27017
+2025-04-14 02:20:36:889 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:83}] to 52.27.240.223:27017
+2025-04-14 02:20:36:912 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:84}] to 52.27.240.223:27017
+2025-04-14 02:20:36:934 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:85}] to 52.27.240.223:27017
+2025-04-14 02:20:36:958 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:86}] to 52.27.240.223:27017
+2025-04-14 02:20:36:985 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:87}] to 52.27.240.223:27017
+2025-04-14 02:20:37:010 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:88}] to 52.27.240.223:27017
+2025-04-14 02:20:37:039 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:89}] to 52.27.240.223:27017
+2025-04-14 02:20:37:064 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:90}] to 52.27.240.223:27017
+2025-04-14 02:20:37:089 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:91}] to 52.27.240.223:27017
+2025-04-14 02:20:37:109 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:92}] to 52.27.240.223:27017
+2025-04-14 02:20:37:135 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:93}] to 52.27.240.223:27017
+2025-04-14 02:20:37:161 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:94}] to 52.27.240.223:27017
+2025-04-14 02:20:37:186 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:16, serverValue:95}] to 52.27.240.223:27017
+2025-04-14 02:20:37:213 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:17, serverValue:96}] to 52.27.240.223:27017
+2025-04-14 02:20:37:244 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:18, serverValue:97}] to 52.27.240.223:27017
+2025-04-14 02:20:37:268 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:19, serverValue:98}] to 52.27.240.223:27017
+2025-04-14 02:20:37:296 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:20, serverValue:99}] to 52.27.240.223:27017
+2025-04-14 02:20:37:323 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:21, serverValue:100}] to 52.27.240.223:27017
+2025-04-14 02:20:37:349 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:22, serverValue:101}] to 52.27.240.223:27017
+2025-04-14 02:20:37:377 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:23, serverValue:102}] to 52.27.240.223:27017
+2025-04-14 02:20:37:404 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:24, serverValue:103}] to 52.27.240.223:27017
+2025-04-14 02:20:37:425 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:25, serverValue:104}] to 52.27.240.223:27017
+2025-04-14 02:20:37:449 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:26, serverValue:105}] to 52.27.240.223:27017
+2025-04-14 02:20:37:473 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:27, serverValue:106}] to 52.27.240.223:27017
+2025-04-14 02:20:37:510 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:28, serverValue:107}] to 52.27.240.223:27017
+2025-04-14 02:20:37:531 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:29, serverValue:108}] to 52.27.240.223:27017
+2025-04-14 02:20:37:554 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:30, serverValue:109}] to 52.27.240.223:27017
+2025-04-14 02:20:37:583 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:31, serverValue:110}] to 52.27.240.223:27017
+2025-04-14 02:20:37:608 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:32, serverValue:111}] to 52.27.240.223:27017
+2025-04-14 02:20:37:637 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:33, serverValue:112}] to 52.27.240.223:27017
+2025-04-14 02:20:37:662 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:34, serverValue:113}] to 52.27.240.223:27017
+2025-04-14 13:03:50:590 [main] INFO  ConsumerRunner - rabbitmq connection pool initialization successful
+2025-04-14 13:03:50:855 [main] INFO  ConsumerRunner - redis connection pool initialization successful
+2025-04-14 13:03:50:920 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-04-14 13:03:50:954 [main] INFO  ConsumerRunner - simulation started
+2025-04-14 13:03:50:980 [cluster-ClusterId{value='67fd6a268910af3e780acfa0', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:322}] to localhost:27017
+2025-04-14 13:03:50:980 [cluster-rtt-ClusterId{value='67fd6a268910af3e780acfa0', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:321}] to localhost:27017
+2025-04-14 13:03:50:981 [cluster-ClusterId{value='67fd6a268910af3e780acfa0', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21129030}
+2025-04-14 13:03:50:986 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 13:03:50:986 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 13:03:50:992 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:323}] to localhost:27017
+2025-04-14 13:03:50:994 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:324}] to localhost:27017
+2025-04-14 13:03:50:997 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:325}] to localhost:27017
+2025-04-14 13:03:50:999 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:326}] to localhost:27017
+2025-04-14 13:03:51:001 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:327}] to localhost:27017
+2025-04-14 13:03:51:004 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:328}] to localhost:27017
+2025-04-14 13:03:51:006 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:329}] to localhost:27017
+2025-04-14 13:03:51:008 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:330}] to localhost:27017
+2025-04-14 13:03:51:009 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:331}] to localhost:27017
+2025-04-14 13:03:51:011 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:332}] to localhost:27017
+2025-04-14 13:03:51:012 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:333}] to localhost:27017
+2025-04-14 13:03:51:013 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:334}] to localhost:27017
+2025-04-14 13:03:51:014 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:335}] to localhost:27017
+2025-04-14 13:03:51:016 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:16, serverValue:336}] to localhost:27017
+2025-04-14 13:03:51:017 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:17, serverValue:337}] to localhost:27017
+2025-04-14 13:03:51:018 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:18, serverValue:338}] to localhost:27017
+2025-04-14 13:03:51:019 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:19, serverValue:339}] to localhost:27017
+2025-04-14 13:03:51:020 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:20, serverValue:340}] to localhost:27017
+2025-04-14 13:03:51:021 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:21, serverValue:341}] to localhost:27017
+2025-04-14 13:03:51:022 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:22, serverValue:342}] to localhost:27017
+2025-04-14 13:03:51:023 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:23, serverValue:343}] to localhost:27017
+2025-04-14 13:03:51:024 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:24, serverValue:344}] to localhost:27017
+2025-04-14 13:03:51:025 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:25, serverValue:345}] to localhost:27017
+2025-04-14 13:03:51:026 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:26, serverValue:346}] to localhost:27017
+2025-04-14 13:03:51:027 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:27, serverValue:347}] to localhost:27017
+2025-04-14 13:03:51:028 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:28, serverValue:348}] to localhost:27017
+2025-04-14 13:03:51:029 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:29, serverValue:349}] to localhost:27017
+2025-04-14 13:03:51:030 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:30, serverValue:350}] to localhost:27017
+2025-04-14 13:03:51:031 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:31, serverValue:351}] to localhost:27017
+2025-04-14 13:03:51:032 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:32, serverValue:352}] to localhost:27017
+2025-04-14 13:03:51:033 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:33, serverValue:353}] to localhost:27017
+2025-04-14 13:03:51:034 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:34, serverValue:354}] to localhost:27017
+2025-04-14 13:39:56:091 [main] INFO  ConsumerRunner - rabbitmq connection pool initialization successful
+2025-04-14 13:39:56:330 [main] INFO  ConsumerRunner - redis connection pool initialization successful
+2025-04-14 13:39:56:385 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-04-14 13:39:56:414 [main] INFO  ConsumerRunner - simulation started
+2025-04-14 13:39:56:437 [cluster-rtt-ClusterId{value='67fd729c16f2b148044ddfc4', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:356}] to localhost:27017
+2025-04-14 13:39:56:437 [cluster-ClusterId{value='67fd729c16f2b148044ddfc4', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:355}] to localhost:27017
+2025-04-14 13:39:56:437 [cluster-ClusterId{value='67fd729c16f2b148044ddfc4', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17959702}
+2025-04-14 13:39:56:445 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:357}] to localhost:27017
+2025-04-14 13:39:56:450 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 13:39:56:451 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 13:40:52:776 [pool-4-thread-43] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:392}] to localhost:27017
+2025-04-14 13:40:52:776 [pool-4-thread-18] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:393}] to localhost:27017
+2025-04-14 13:40:53:157 [pool-4-thread-76] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:394}] to localhost:27017
+2025-04-14 13:40:53:163 [pool-4-thread-62] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:395}] to localhost:27017
+2025-04-14 13:40:53:610 [pool-4-thread-57] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:396}] to localhost:27017
+2025-04-14 13:40:53:610 [pool-4-thread-25] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:397}] to localhost:27017
+2025-04-14 13:40:53:916 [pool-4-thread-100] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:398}] to localhost:27017
+2025-04-14 13:40:53:931 [pool-4-thread-36] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:399}] to localhost:27017
+2025-04-14 13:40:53:953 [pool-4-thread-4] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:400}] to localhost:27017
+2025-04-14 13:40:53:955 [pool-4-thread-45] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:401}] to localhost:27017
+2025-04-14 13:40:53:966 [pool-4-thread-63] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:402}] to localhost:27017
+2025-04-14 13:40:53:973 [pool-4-thread-81] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:403}] to localhost:27017
+2025-04-14 13:43:34:503 [main] INFO  ConsumerRunner - rabbitmq connection pool initialization successful
+2025-04-14 13:43:34:830 [main] INFO  ConsumerRunner - redis connection pool initialization successful
+2025-04-14 13:43:34:886 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-04-14 13:43:34:916 [main] INFO  ConsumerRunner - simulation started
+2025-04-14 13:43:34:939 [cluster-ClusterId{value='67fd73760d52741c3182b3ab', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:405}] to localhost:27017
+2025-04-14 13:43:34:939 [cluster-rtt-ClusterId{value='67fd73760d52741c3182b3ab', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:404}] to localhost:27017
+2025-04-14 13:43:34:939 [cluster-ClusterId{value='67fd73760d52741c3182b3ab', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18477829}
+2025-04-14 13:43:34:951 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:406}] to localhost:27017
+2025-04-14 13:43:34:951 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 13:43:34:952 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 13:44:13:081 [pool-4-thread-80] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:407}] to localhost:27017
+2025-04-14 13:44:13:722 [pool-4-thread-17] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:408}] to localhost:27017
+2025-04-14 13:44:13:725 [pool-4-thread-75] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:410}] to localhost:27017
+2025-04-14 13:44:13:725 [pool-4-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:409}] to localhost:27017
+2025-04-14 13:44:13:727 [pool-4-thread-38] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:411}] to localhost:27017
+2025-04-14 13:44:13:750 [pool-4-thread-43] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:412}] to localhost:27017
+2025-04-14 13:44:14:481 [pool-4-thread-62] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:413}] to localhost:27017
+2025-04-14 13:44:14:499 [pool-4-thread-61] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:414}] to localhost:27017
+2025-04-14 13:44:14:525 [pool-4-thread-35] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:415}] to localhost:27017
+2025-04-14 13:44:14:565 [pool-4-thread-41] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:416}] to localhost:27017
+2025-04-14 13:44:14:654 [pool-4-thread-34] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:417}] to localhost:27017
+2025-04-14 13:44:14:679 [pool-4-thread-53] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:418}] to localhost:27017
+2025-04-14 13:45:53:608 [main] INFO  ConsumerRunner - rabbitmq connection pool initialization successful
+2025-04-14 13:45:54:010 [main] INFO  ConsumerRunner - redis connection pool initialization successful
+2025-04-14 13:45:54:066 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-04-14 13:45:54:092 [main] INFO  ConsumerRunner - simulation started
+2025-04-14 13:45:54:117 [cluster-rtt-ClusterId{value='67fd74021a14cd26428119e4', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:419}] to localhost:27017
+2025-04-14 13:45:54:117 [cluster-ClusterId{value='67fd74021a14cd26428119e4', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:420}] to localhost:27017
+2025-04-14 13:45:54:117 [cluster-ClusterId{value='67fd74021a14cd26428119e4', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19034955}
+2025-04-14 13:45:54:127 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:421}] to localhost:27017
+2025-04-14 13:45:54:129 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 13:45:54:129 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 13:46:26:398 [pool-4-thread-53] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:422}] to localhost:27017
+2025-04-14 13:46:27:147 [pool-4-thread-29] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:423}] to localhost:27017
+2025-04-14 13:46:27:474 [pool-4-thread-98] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:424}] to localhost:27017
+2025-04-14 13:46:27:625 [pool-4-thread-11] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:425}] to localhost:27017
+2025-04-14 13:46:27:648 [pool-4-thread-74] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:426}] to localhost:27017
+2025-04-14 13:46:27:661 [pool-4-thread-82] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:427}] to localhost:27017
+2025-04-14 13:46:27:979 [pool-4-thread-30] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:428}] to localhost:27017
+2025-04-14 13:46:27:979 [pool-4-thread-72] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:429}] to localhost:27017
+2025-04-14 13:46:28:002 [pool-4-thread-89] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:430}] to localhost:27017
+2025-04-14 13:46:28:002 [pool-4-thread-35] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:431}] to localhost:27017
+2025-04-14 13:46:28:022 [pool-4-thread-68] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:16, serverValue:432}] to localhost:27017
+2025-04-14 13:46:28:024 [pool-4-thread-65] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:17, serverValue:433}] to localhost:27017
+2025-04-14 13:46:28:047 [pool-4-thread-96] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:23, serverValue:435}] to localhost:27017
+2025-04-14 13:46:28:047 [pool-4-thread-57] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:22, serverValue:434}] to localhost:27017
+2025-04-14 14:05:19:898 [main] INFO  ConsumerRunner - rabbitmq connection pool initialization successful
+2025-04-14 14:05:20:245 [main] INFO  ConsumerRunner - redis connection pool initialization successful
+2025-04-14 14:05:20:303 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-04-14 14:05:20:331 [main] INFO  ConsumerRunner - simulation started
+2025-04-14 14:05:20:341 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 14:05:20:354 [cluster-ClusterId{value='67fd78904f741e6190e189cc', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:436}] to localhost:27017
+2025-04-14 14:05:20:354 [cluster-rtt-ClusterId{value='67fd78904f741e6190e189cc', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:437}] to localhost:27017
+2025-04-14 14:05:20:355 [cluster-ClusterId{value='67fd78904f741e6190e189cc', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17189618}
+2025-04-14 14:05:20:365 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:438}] to localhost:27017
+2025-04-14 14:05:20:368 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 14:06:12:198 [pool-4-thread-95] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:439}] to localhost:27017
+2025-04-14 14:06:13:666 [pool-4-thread-91] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:440}] to localhost:27017
+2025-04-14 14:06:13:806 [pool-4-thread-88] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:441}] to localhost:27017
+2025-04-14 14:06:13:964 [pool-4-thread-56] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:442}] to localhost:27017
+2025-04-14 14:06:13:968 [pool-4-thread-43] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:443}] to localhost:27017
+2025-04-14 14:06:14:053 [pool-4-thread-21] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:444}] to localhost:27017
+2025-04-14 14:06:14:073 [pool-4-thread-60] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:445}] to localhost:27017
+2025-04-14 14:06:14:491 [pool-4-thread-83] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:446}] to localhost:27017
+2025-04-14 14:06:14:501 [pool-4-thread-27] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:447}] to localhost:27017
+2025-04-14 14:06:14:501 [pool-4-thread-87] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:448}] to localhost:27017
+2025-04-14 14:06:14:511 [pool-4-thread-49] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:450}] to localhost:27017
+2025-04-14 14:06:14:511 [pool-4-thread-52] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:449}] to localhost:27017
+2025-04-14 14:06:14:612 [main] INFO  ConsumerRunner - all messages processed
+2025-04-14 14:06:14:613 [main] INFO  ConsumerRunner - -------------------------Simulation Summary-------------------------
+2025-04-14 14:06:14:613 [main] INFO  ConsumerRunner - [REDIS TOTAL WRITE]       200000
+2025-04-14 14:06:14:614 [main] INFO  ConsumerRunner - [MONGO TOTAL WRITE]       182000
+2025-04-14 14:06:14:709 [main] INFO  ConsumerRunner - rabbitmq channel pool closed
+2025-04-14 14:06:14:747 [main] INFO  ConsumerRunner - redis channel pool closed
+2025-04-14 14:06:14:751 [main] INFO  ConsumerRunner - mongo pool closed
+2025-04-14 14:06:14:755 [main] INFO  ConsumerRunner - worker pool shut down
+2025-04-14 14:06:14:755 [main] INFO  ConsumerRunner - simulation completed
+2025-04-14 14:10:47:043 [main] INFO  ConsumerRunner - rabbitmq connection pool initialization successful
+2025-04-14 14:10:47:309 [main] INFO  ConsumerRunner - redis connection pool initialization successful
+2025-04-14 14:10:47:367 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-04-14 14:10:47:398 [main] INFO  ConsumerRunner - simulation started
+2025-04-14 14:10:47:410 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 14:10:47:425 [cluster-rtt-ClusterId{value='67fd79d7a5df3f4a6b281b1e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:452}] to localhost:27017
+2025-04-14 14:10:47:425 [cluster-ClusterId{value='67fd79d7a5df3f4a6b281b1e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:451}] to localhost:27017
+2025-04-14 14:10:47:426 [cluster-ClusterId{value='67fd79d7a5df3f4a6b281b1e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20978050}
+2025-04-14 14:10:47:436 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:453}] to localhost:27017
+2025-04-14 14:10:47:442 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 14:11:18:793 [pool-4-thread-27] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:454}] to localhost:27017
+2025-04-14 14:11:18:803 [pool-4-thread-48] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:455}] to localhost:27017
+2025-04-14 14:11:18:901 [pool-4-thread-73] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:456}] to localhost:27017
+2025-04-14 14:11:18:913 [pool-4-thread-69] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:457}] to localhost:27017
+2025-04-14 14:11:18:914 [pool-4-thread-23] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:458}] to localhost:27017
+2025-04-14 14:11:18:957 [pool-4-thread-77] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:459}] to localhost:27017
+2025-04-14 14:11:19:003 [pool-4-thread-41] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:460}] to localhost:27017
+2025-04-14 14:11:19:050 [pool-4-thread-44] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:462}] to localhost:27017
+2025-04-14 14:11:19:050 [pool-4-thread-38] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:461}] to localhost:27017
+2025-04-14 14:11:19:078 [pool-4-thread-7] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:463}] to localhost:27017
+2025-04-14 14:11:19:079 [pool-4-thread-89] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:464}] to localhost:27017
+2025-04-14 14:11:19:128 [pool-4-thread-97] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:465}] to localhost:27017
+2025-04-14 14:11:19:128 [pool-4-thread-75] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:16, serverValue:466}] to localhost:27017
+2025-04-14 14:11:19:152 [pool-4-thread-25] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:17, serverValue:467}] to localhost:27017
+2025-04-14 14:11:19:179 [pool-4-thread-42] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:18, serverValue:468}] to localhost:27017
+2025-04-14 14:11:19:682 [pool-4-thread-65] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:19, serverValue:469}] to localhost:27017
+2025-04-14 14:11:19:703 [pool-4-thread-35] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:20, serverValue:470}] to localhost:27017
+2025-04-14 14:11:20:010 [main] INFO  ConsumerRunner - all messages processed
+2025-04-14 14:11:20:031 [pool-4-thread-9] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:21, serverValue:471}] to localhost:27017
+2025-04-14 14:11:20:105 [main] INFO  ConsumerRunner - rabbitmq channel pool closed
+2025-04-14 14:11:20:113 [main] INFO  ConsumerRunner - redis channel pool closed
+2025-04-14 14:11:20:133 [main] INFO  ConsumerRunner - mongo pool closed
+2025-04-14 14:11:20:156 [main] INFO  ConsumerRunner - worker pool shut down
+2025-04-14 14:11:20:156 [main] INFO  ConsumerRunner - simulation completed
+2025-04-14 14:11:20:156 [main] INFO  ConsumerRunner - -------------------------Simulation Summary-------------------------
+2025-04-14 14:11:20:156 [main] INFO  ConsumerRunner - [REDIS TOTAL WRITE]       200000
+2025-04-14 14:11:20:178 [main] INFO  ConsumerRunner - [MONGO TOTAL WRITE]       200000
+2025-04-14 14:14:30:151 [main] INFO  ConsumerRunner - rabbitmq connection pool initialization successful
+2025-04-14 14:14:30:498 [main] INFO  ConsumerRunner - redis connection pool initialization successful
+2025-04-14 14:14:30:553 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-04-14 14:14:30:582 [main] INFO  ConsumerRunner - simulation started
+2025-04-14 14:14:30:590 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 14:14:30:603 [cluster-rtt-ClusterId{value='67fd7ab6e69ad124e58b38bc', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:472}] to localhost:27017
+2025-04-14 14:14:30:603 [cluster-ClusterId{value='67fd7ab6e69ad124e58b38bc', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:473}] to localhost:27017
+2025-04-14 14:14:30:604 [cluster-ClusterId{value='67fd7ab6e69ad124e58b38bc', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17087730}
+2025-04-14 14:14:30:613 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:474}] to localhost:27017
+2025-04-14 14:14:30:614 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 14:15:26:950 [pool-4-thread-8] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:475}] to localhost:27017
+2025-04-14 14:15:27:059 [pool-4-thread-65] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:477}] to localhost:27017
+2025-04-14 14:15:27:059 [pool-4-thread-38] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:476}] to localhost:27017
+2025-04-14 14:15:27:887 [pool-4-thread-52] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:478}] to localhost:27017
+2025-04-14 14:15:27:887 [pool-4-thread-80] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:479}] to localhost:27017
+2025-04-14 14:15:27:892 [pool-4-thread-67] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:480}] to localhost:27017
+2025-04-14 14:15:28:213 [pool-4-thread-51] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:482}] to localhost:27017
+2025-04-14 14:15:28:213 [pool-4-thread-14] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:481}] to localhost:27017
+2025-04-14 14:15:28:244 [pool-4-thread-29] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:483}] to localhost:27017
+2025-04-14 14:15:28:244 [pool-4-thread-7] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:484}] to localhost:27017
+2025-04-14 14:15:28:250 [pool-4-thread-63] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:17, serverValue:486}] to localhost:27017
+2025-04-14 14:15:28:250 [pool-4-thread-37] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:16, serverValue:485}] to localhost:27017
+2025-04-14 14:15:28:265 [pool-4-thread-5] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:18, serverValue:487}] to localhost:27017
+2025-04-14 14:15:28:268 [main] INFO  ConsumerRunner - all messages processed
+2025-04-14 14:15:28:294 [pool-4-thread-71] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:22, serverValue:489}] to localhost:27017
+2025-04-14 14:15:28:294 [pool-4-thread-18] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:19, serverValue:488}] to localhost:27017
+2025-04-14 14:15:28:337 [pool-4-thread-59] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:28, serverValue:490}] to localhost:27017
+2025-04-14 14:15:28:441 [main] INFO  ConsumerRunner - rabbitmq channel pool closed
+2025-04-14 14:15:28:468 [main] INFO  ConsumerRunner - redis channel pool closed
+2025-04-14 14:15:28:489 [main] INFO  ConsumerRunner - mongodb connection pool closed
+2025-04-14 14:15:28:516 [main] INFO  ConsumerRunner - worker pool shut down
+2025-04-14 14:15:28:537 [main] INFO  ConsumerRunner - simulation completed
+2025-04-14 14:15:28:537 [main] INFO  ConsumerRunner - -------------------------Simulation Summary-------------------------
+2025-04-14 14:15:28:537 [main] INFO  ConsumerRunner - [REDIS TOTAL WRITE]       200000
+2025-04-14 14:15:28:539 [main] INFO  ConsumerRunner - [MONGO TOTAL WRITE]       200000
+2025-04-14 15:34:50:660 [main] INFO  ConsumerRunner - rabbitmq connection pool initialization successful
+2025-04-14 15:34:50:993 [main] INFO  ConsumerRunner - redis connection pool initialization successful
+2025-04-14 15:34:51:044 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-04-14 15:34:51:075 [main] INFO  ConsumerRunner - simulation started
+2025-04-14 15:34:51:083 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-14 15:34:51:095 [cluster-rtt-ClusterId{value='67fd8d8b12e3456e916a39c3', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:526}] to localhost:27017
+2025-04-14 15:34:51:095 [cluster-ClusterId{value='67fd8d8b12e3456e916a39c3', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:525}] to localhost:27017
+2025-04-14 15:34:51:096 [cluster-ClusterId{value='67fd8d8b12e3456e916a39c3', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16217233}
+2025-04-14 15:34:51:103 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:527}] to localhost:27017
+2025-04-14 15:34:51:105 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-14 15:35:24:100 [pool-4-thread-80] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:529}] to localhost:27017
+2025-04-14 15:35:24:100 [pool-4-thread-65] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:528}] to localhost:27017
+2025-04-14 15:35:24:791 [pool-4-thread-37] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:530}] to localhost:27017
+2025-04-14 15:35:24:900 [pool-4-thread-35] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:532}] to localhost:27017
+2025-04-14 15:35:24:900 [pool-4-thread-86] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:531}] to localhost:27017
+2025-04-14 15:35:24:903 [pool-4-thread-25] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:533}] to localhost:27017
+2025-04-14 15:35:25:128 [pool-4-thread-73] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:534}] to localhost:27017
+2025-04-14 15:35:25:138 [pool-4-thread-38] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:535}] to localhost:27017
+2025-04-14 15:35:25:139 [pool-4-thread-60] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:536}] to localhost:27017
+2025-04-14 15:35:25:327 [pool-4-thread-56] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:537}] to localhost:27017
+2025-04-14 15:35:25:327 [pool-4-thread-99] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:538}] to localhost:27017
+2025-04-14 15:35:25:390 [main] INFO  ConsumerRunner - all messages processed
+2025-04-14 15:35:25:485 [main] INFO  ConsumerRunner - rabbitmq channel pool closed
+2025-04-14 15:35:25:533 [main] INFO  ConsumerRunner - redis channel pool closed
+2025-04-14 15:35:25:539 [main] INFO  ConsumerRunner - mongodb connection pool closed
+2025-04-14 15:35:25:548 [main] INFO  ConsumerRunner - worker pool shut down
+2025-04-14 15:35:25:548 [main] INFO  ConsumerRunner - simulation completed
+2025-04-14 15:35:25:548 [main] INFO  ConsumerRunner - -------------------------Simulation Summary-------------------------
+2025-04-14 15:35:25:548 [main] INFO  ConsumerRunner - [REDIS TOTAL WRITE]       200000
+2025-04-14 15:35:25:549 [main] INFO  ConsumerRunner - [MONGO TOTAL WRITE]       200000
