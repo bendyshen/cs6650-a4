@@ -40,7 +40,9 @@ public class PostService {
     private static final Integer REDIS_PORT = 6379; // Replace with Redis Port Number
 
     // MongoDB Atlas connection
-    private static final String MONGODB_URL = "mongodb+srv://yuanshen:7895123a@cs6650.ar7rpbj.mongodb.net/?retryWrites=true&w=majority&appName=CS6650";
+    private static final String MONGODB_USERNAME = "cs6650-a4"; // MongoDB username
+    private static final String MONGODB_PASSWORD = "CS6650-a4"; // MongoDB password
+    private static final String MONGODB_URL = "mongodb+srv://" + MONGODB_USERNAME + ":" + MONGODB_PASSWORD + "@cs6650.ar7rpbj.mongodb.net/?retryWrites=true&w=majority&appName=CS6650";
 
     // Thread pool configuration
     private static final int THREAD_POOL_SIZE = 8;
