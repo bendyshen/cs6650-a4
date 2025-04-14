@@ -3,6 +3,8 @@ package com.upic.query;
 import com.google.gson.Gson;
 import com.mongodb.client.MongoDatabase;
 import java.util.List;
+import java.util.Map;
+
 import redis.clients.jedis.Jedis;
 
 public abstract class Query {
@@ -21,9 +23,7 @@ public abstract class Query {
     return null;
   }
 
-  public String getMongoKey() {
-    return null;
-  }
+  public Map<String, Object> getQueryMap() {return null; }
 
   public String queryRedisString(Jedis jedis, String key) {
     return null;
@@ -33,11 +33,11 @@ public abstract class Query {
     return null;
   }
 
-  public String queryMongoDBString(MongoDatabase mongoDB, String collection, String key) {
+  public String queryMongoDBString(MongoDatabase mongoDB, String collection, Map<String, Object> queryMap) {
     return null;
   }
 
-  public List<Integer> queryMongoDBList(MongoDatabase mongoDB, String collection, String key) {
+  public List<Integer> queryMongoDBList(MongoDatabase mongoDB, String collection, Map<String, Object> conditions) {
     return null;
   }
 }
