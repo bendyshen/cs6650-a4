@@ -13,6 +13,7 @@ import com.upic.query.Query;
 import com.upic.rabbitmqPool.RabbitmqPool;
 import com.upic.redisPool.RedisPool;
 import java.io.IOException;
+import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -24,10 +25,11 @@ import redis.clients.jedis.Pipeline;
 
 @WebServlet(name = "SkierServlet", urlPatterns = "/skiers/*")
 public class SkierServlet extends HttpServlet {
+  private static final String COLLECTION_NAME = "ResortSkiers"; // TODO: Check if the collection name matches
 
-  private static final String COLLECTION_NAME_DAY_VERTICAL = "SkierVertical"; // TODO: check MongoDB data model with consumer
-  private static final String COLLECTION_NAME_TOTAL_VERTICAL = "TotalVertical"; // TODO: check MongoDB data model with consumer
-  private static final String COLLECTION_NAME_TOTAL_VERTICAL_SEASON = "TotalVerticalSeason"; // TODO: check MongoDB data model with consumer
+//  private static final String COLLECTION_NAME_DAY_VERTICAL = "SkierVertical"; // TODO: check MongoDB data model with consumer
+//  private static final String COLLECTION_NAME_TOTAL_VERTICAL = "TotalVertical"; // TODO: check MongoDB data model with consumer
+//  private static final String COLLECTION_NAME_TOTAL_VERTICAL_SEASON = "TotalVerticalSeason"; // TODO: check MongoDB data model with consumer
   private Gson gson;
   private RabbitmqPool rabbitmqPool;
   private RedisPool redisPool;
@@ -48,68 +50,84 @@ public class SkierServlet extends HttpServlet {
   @Override
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws IOException {
+    response.setContentType("application/json");
+
     String path = request.getPathInfo();
+    if (path == null || path.trim().isEmpty()) {
+      response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Missing URL path");
+      return;
+    }
+
     Query query;
-    String collectionName;
     String result;
 
     // determine query type: GetDayVertical or GetTotalVertical
     if (path.matches("/\\d+/seasons/\\d+/days/\\d+/skiers/\\d+")) {
       query = new GetDayVertical(this.gson, path);
-      collectionName = COLLECTION_NAME_DAY_VERTICAL;
     } else if (path.matches("/\\d+/vertical")) {
-      String seasonVal = request.getParameter("season");
-      if (seasonVal == null) {
-        query = new GetTotalVertical(this.gson, path);
-        collectionName = COLLECTION_NAME_TOTAL_VERTICAL;
-      } else {
-        query = new GetTotalVertical(this.gson, path + "/season/" + seasonVal);
-        collectionName = COLLECTION_NAME_TOTAL_VERTICAL_SEASON;
+      String resortVal = request.getParameter("resort"); // TODO: Check JMeter test
+      // resort required
+      if (resortVal == null || resortVal.trim().isEmpty()) {
+        response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Missing required query parameter: resort");
+        return;
       }
+
+      // create new path
+      String seasonVal = request.getParameter("season"); // TODO: Check JMeter test
+      String newPath = path + "/resort/" + resortVal;
+      if (seasonVal != null && !seasonVal.trim().isEmpty()) {
+        newPath += "/season/" + seasonVal;
+      }
+      query = new GetTotalVertical(this.gson, newPath);
+
     } else {
       response.sendError(HttpServletResponse.SC_NOT_FOUND);
       return;
     }
 
     System.out.println("Query: " + query);
-    // if query is valid
-    if (query.validate()) {
-      System.out.println("Query validated.");
-      try (Jedis jedis = redisPool.borrowChannel()) {
-        // assumes that Redis and MangoDB use the same key
-        // TODO: check Redis data model, see if Key used in write matches Key used in read
-        result = query.queryRedisString(jedis, query.getRedisKey());
-        // Redis hit
-        if (result != null) {
-          System.out.println("Redis hit.");
-          response.setStatus(HttpServletResponse.SC_OK);
-          response.getWriter().write(result);
-          return;
-        }
-        // Redis miss, query MongoDB
-        System.out.println("Redis miss.");
-        // TODO: check MongoDB data model, see if database name, collection name, and key setup match the constants
-        result = query.queryMongoDBString(mongoPool.getDatabase(), collectionName,
-            query.getMongoKey());
-        // if no result found in MongoDB
-        if (result == null) {
-          System.out.println("no result found in MongoDB");
-          response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-          return;
-        }
-        // otherwise, cache the result in Redis
-        System.out.println("result found in MongoDB");
-        Pipeline pipeline = jedis.pipelined();
-        pipeline.set(query.getRedisKey(), result);
-        pipeline.sync();
-        System.out.println("Redis pipeline sync complete.");
+    if (!query.validate()) {
+      System.out.println("Invalid query");
+      response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+      return;
+    }
+
+    // query valid
+    System.out.println("Query validated.");
+    try (Jedis jedis = redisPool.borrowChannel()) {
+      result = query.queryRedisString(jedis, query.getRedisKey());
+      // Redis hit
+      if (result != null) {
+        System.out.println("Redis hit.");
         response.setStatus(HttpServletResponse.SC_OK);
-        response.getWriter().write(result);
-      } catch (Exception e) {
-        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        response.getWriter().write(result); // TODO: Check if the response matches JMeter test
+        return;
       }
+      // Redis miss, query MongoDB
+      System.out.println("Redis miss.");
+      Map<String, Object> queryMap = query.getQueryMap();
+      result = query.queryMongoDBString(mongoPool.getDatabase(), COLLECTION_NAME,
+          queryMap);
+      // if no result found in MongoDB
+      if (result == null) {
+        System.out.println("no result found in MongoDB");
+        response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+        return;
+      }
+      // otherwise, cache the result in Redis
+      System.out.println("result found in MongoDB");
+      Pipeline pipeline = jedis.pipelined();
+      pipeline.set(query.getRedisKey(), result);
+      pipeline.sync();
+      System.out.println("Redis pipeline sync complete.");
+      response.setStatus(HttpServletResponse.SC_OK);
+      response.getWriter().write(result); // TODO: Check if the response matches JMeter test
+    } catch (Exception e) {
+      response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+      System.err.println(e.getMessage());
     }
   }
+
 
   @Override
   protected void doPost(HttpServletRequest request, HttpServletResponse response)

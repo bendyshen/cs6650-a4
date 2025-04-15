@@ -8,11 +8,16 @@ import static com.upic.validator.Params.SEASON_ID_LOWER_BOUND;
 import static com.upic.validator.Params.SEASON_ID_UPPER_BOUND;
 
 import com.google.gson.Gson;
+import com.mongodb.client.DistinctIterable;
+import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+
+import java.util.*;
+import java.util.stream.Collectors;
+
+import com.mongodb.client.model.Filters;
 import org.bson.Document;
+import org.bson.conversions.Bson;
 import redis.clients.jedis.Jedis;
 
 /**
@@ -25,6 +30,7 @@ public class GetResortSkiers extends Query {
   private int resortID;
   private int seasonID;
   private int dayID;
+
 
   public GetResortSkiers(Gson gson, String urlPath) {
     super(gson);
@@ -67,21 +73,30 @@ public class GetResortSkiers extends Query {
   }
 
   @Override
-  public String getMongoKey() {
-    return "resort:" + resortID + ":season:" + seasonID + ":day:" + dayID + ":skiers";
+  public Map<String, Object> getQueryMap() {
+    Map<String, Object> queryMap = new HashMap<>();
+    queryMap.put("resortID", resortID);
+    queryMap.put("seasonID", seasonID);
+    queryMap.put("dayID", dayID);
+    return queryMap;
   }
 
   @Override
-  public List<Integer> queryMongoDBList(MongoDatabase mongoDB, String collection, String key) {
+  public String queryMongoDBString(MongoDatabase mongoDB, String collectionName, Map<String, Object> conditions) {
     // TODO: check data model for method definition
     try {
-      System.out.println("MongoDB key: " + key);
-      Document result = mongoDB.getCollection(collection).find(new Document("_id", key)).first();
-      if (result == null) {
-        System.out.println("result is null");
-        return null;
+      MongoCollection<Document> collection = mongoDB.getCollection(collectionName);
+      List<Bson> filters = conditions.entrySet().stream()
+              .map(entry -> Filters.eq(entry.getKey(), entry.getValue()))
+              .toList();
+
+      Bson combinedFilter = Filters.and(filters);
+      DistinctIterable<Integer> uniqueSkierIDs = collection.distinct("skierID", combinedFilter, Integer.class);
+      List<Integer> list = uniqueSkierIDs.into(new ArrayList<>());
+      if (list.isEmpty()) {
+        return "0";
       }
-      return result.getList("skierIds", Integer.class);
+      return String.valueOf(list.size());
     } catch (Exception e) {
       System.out.println("exception: " + e);
       return null;

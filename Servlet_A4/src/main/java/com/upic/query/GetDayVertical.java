@@ -10,9 +10,15 @@ import static com.upic.validator.Params.SKIER_ID_LOWER_BOUND;
 import static com.upic.validator.Params.SKIER_ID_UPPER_BOUND;
 
 import com.google.gson.Gson;
+import com.mongodb.client.AggregateIterable;
+import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import redis.clients.jedis.Jedis;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * GetDayVertical class. It gets the get the total vertical for the skier for the specified ski day.
@@ -57,12 +63,15 @@ public class GetDayVertical extends Query {
     return "season:" + seasonID + ":day:" + dayID + ":skier:" + skierID + ":vertical";
   }
 
-
   @Override
-  public String getMongoKey() {
-    return "season:" + seasonID + ":day:" + dayID + ":skier:" + skierID + ":vertical";
+  public Map<String, Object> getQueryMap() {
+    Map<String, Object> queryMap = new HashMap<>();
+    queryMap.put("resortID", resortID);
+    queryMap.put("seasonID", seasonID);
+    queryMap.put("dayID", dayID);
+    queryMap.put("skierID", skierID);
+    return queryMap;
   }
-
 
   @Override
   public String queryRedisString(Jedis jedis, String key) {
@@ -76,15 +85,25 @@ public class GetDayVertical extends Query {
   }
 
   @Override
-  public String queryMongoDBString(MongoDatabase mongoDB, String collection, String key) {
+  public String queryMongoDBString(MongoDatabase mongoDB, String collectionName, Map<String, Object> queryMap) {
+    return getTotalVerticalString(mongoDB, collectionName, queryMap);
+  }
+
+  static String getTotalVerticalString(MongoDatabase mongoDB, String collectionName, Map<String, Object> queryMap) {
     try {
-      System.out.println("MongoDB key: " + key);
-      Document result = mongoDB.getCollection(collection).find(new Document("_id", key)).first();
+      MongoCollection<Document> collection = mongoDB.getCollection(collectionName);
+      Document matchStage = new Document("$match", new Document(queryMap));
+      Document groupStage = new Document("$group",
+              new Document("_id", null)
+                      .append("totalVerticals", new Document("$sum", "$vertical")));
+
+      AggregateIterable<Document> res = collection.aggregate(Arrays.asList(matchStage, groupStage));
+      Document result = res.first();
       if (result == null) {
-        System.out.println("result is null");
-        return null;
+        return "0";
       }
-      return String.valueOf(result.getInteger("vertical"));
+      return String.valueOf(result.getInteger("totalVerticals"));
+
     } catch (Exception e) {
       System.out.println("exception: " + e);
       return null;
