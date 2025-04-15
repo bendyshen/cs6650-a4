@@ -5,10 +5,7 @@ import static com.mongodb.client.model.Aggregates.group;
 import static com.mongodb.client.model.Aggregates.match;
 import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
-import static com.upic.validator.Params.SEASON_ID_LOWER_BOUND;
-import static com.upic.validator.Params.SEASON_ID_UPPER_BOUND;
-import static com.upic.validator.Params.SKIER_ID_LOWER_BOUND;
-import static com.upic.validator.Params.SKIER_ID_UPPER_BOUND;
+import static com.upic.validator.Params.*;
 
 import com.google.gson.Gson;
 import com.mongodb.client.AggregateIterable;
@@ -33,7 +30,7 @@ public class GetTotalVertical extends Query {
   private final String urlPath;
   private int seasonID;
   private int skierID;
-
+  private int resortID;
   /**
    * Constructor of GetTotalVertical.
    * @param gson        gson object
@@ -46,22 +43,39 @@ public class GetTotalVertical extends Query {
     this.urlPath = urlPath;
     this.seasonID = -1;
     this.skierID = -1;
+    this.resortID = -1;
   }
 
   @Override
   public boolean validate() {
     String[] parts = urlPath.split("/");
-    // ["", {skierID}, vertical] or ["", {skierID}, "vertical", "season", {seasonID}]
-    if (parts.length != 3 && parts.length != 5) {
+    // ["", {skierID}, vertical, resort, resortID] or ["", {skierID}, "vertical", resort, resortID, "season", {seasonID}]
+    if (parts.length != 5 && parts.length != 7) {
       return false;
     }
-    this.skierID = Integer.parseInt(parts[1]);
-    if (parts.length == 3) {
-      return skierID >= SKIER_ID_LOWER_BOUND.getInt() && skierID <= SKIER_ID_UPPER_BOUND.getInt();
+    try {
+      this.skierID = Integer.parseInt(parts[1]);
+      this.resortID = Integer.parseInt(parts[4]);
+      if (parts.length == 5) {
+        return skierID >= SKIER_ID_LOWER_BOUND.getInt()
+                && skierID <= SKIER_ID_UPPER_BOUND.getInt()
+                && resortID >= RESORT_ID_LOWER_BOUND.getInt()
+                && resortID <= RESORT_ID_UPPER_BOUND.getInt();
+      }
+
+      // optional param: seasonID
+      this.seasonID = Integer.parseInt(parts[6]);
+      return skierID >= SKIER_ID_LOWER_BOUND.getInt()
+              && skierID <= SKIER_ID_UPPER_BOUND.getInt()
+              && resortID >= RESORT_ID_LOWER_BOUND.getInt()
+              && resortID <= RESORT_ID_UPPER_BOUND.getInt()
+              && seasonID >= SEASON_ID_LOWER_BOUND.getInt()
+              && seasonID <= SEASON_ID_UPPER_BOUND.getInt();
+
+    } catch (NumberFormatException e) {
+      System.err.println(e.getMessage());
+      return false;
     }
-    this.seasonID = Integer.parseInt(parts[4]);
-    return skierID >= SKIER_ID_LOWER_BOUND.getInt() && skierID <= SKIER_ID_UPPER_BOUND.getInt()
-        && seasonID >= SEASON_ID_LOWER_BOUND.getInt() && seasonID <= SEASON_ID_UPPER_BOUND.getInt();
   }
 
   /**
