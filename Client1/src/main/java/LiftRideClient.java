@@ -33,12 +33,13 @@ public class LiftRideClient {
     private static final AtomicInteger totalRequestsSent = new AtomicInteger(0);  // Global counter to prevent exceeding TOTAL_REQUESTS
 
     public static void main(String[] args) throws InterruptedException {
+        int dayID = Integer.parseInt(args[0]); // Pass 1, 2, or 3 as CLI arg
         long startTime = System.currentTimeMillis();
 
         // Executor service for Phase 1 threads
         ExecutorService phase1Executor = Executors.newFixedThreadPool(INITIAL_THREADS);
         for (int i = 0; i < INITIAL_THREADS; i++) {
-            phase1Executor.execute(new Phase1Worker());
+            phase1Executor.execute(new Phase1Worker(dayID));
         }
 
         // Executor service for Phase 2 threads
@@ -50,7 +51,7 @@ public class LiftRideClient {
                 if (remainingInitials.get() < INITIAL_THREADS) {
                     System.out.println("[Phase2] Starting dynamic threads...");
                     for (int i = 0; i < DYNAMIC_THREADS; i++) {
-                        phase2Executor.execute(new Phase2Worker());
+                        phase2Executor.execute(new Phase2Worker(dayID));
                     }
                     phase2Started.set(true);
                 }
@@ -76,8 +77,14 @@ public class LiftRideClient {
      * When any thread finishes, Phase 2 workers are triggered.
      */
     static class Phase1Worker implements Runnable {
-        private final LiftRideProducer producer = new LiftRideProducer(BASE_PATH);
+        private final LiftRideProducer producer;
         private int processed = 0;
+        private final int dayID;
+
+        public Phase1Worker(int dayID) {
+            this.dayID = dayID;
+            this.producer = new LiftRideProducer(BASE_PATH);
+        }
 
         @Override
         public void run() {
@@ -91,7 +98,7 @@ public class LiftRideClient {
                         break;
                     }
 
-                    LiftRideEvent event = LiftRideEvent.createRandomEvent();
+                    LiftRideEvent event = LiftRideEvent.createRandomEvent(this.dayID);
                     if (sendPostWithRetry(event, producer)) {
                         processed++;
                         successCount.incrementAndGet();
@@ -111,7 +118,13 @@ public class LiftRideClient {
      * It runs until the total number of requests reaches the predefined limit.
      */
     static class Phase2Worker implements Runnable {
-        private final LiftRideProducer producer = new LiftRideProducer(BASE_PATH);
+        private final LiftRideProducer producer;
+        private final int dayID;
+
+        public Phase2Worker(int dayID) {
+            this.dayID = dayID;
+            this.producer = new LiftRideProducer(BASE_PATH);
+        }
 
         @Override
         public void run() {
@@ -124,7 +137,7 @@ public class LiftRideClient {
                     break;
                 }
 
-                LiftRideEvent event = LiftRideEvent.createRandomEvent();
+                LiftRideEvent event = LiftRideEvent.createRandomEvent(this.dayID);
                 if (sendPostWithRetry(event, producer)) {
                     successCount.incrementAndGet();
                 } else {

@@ -33,7 +33,7 @@ public class LiftRideProducer {
                     event.liftRide,
                     event.resortID,
                     "2025",    // Hardcoded season ID
-                    "1",       // Hardcoded day ID
+                    event.dayID,       // Hardcoded day ID
                     event.skierID
             );
             return true;
