@@ -7,6 +7,7 @@ import static com.upic.validator.PostRequestValidator.validateRequestUrl;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.mongodb.client.MongoCollection;
+import com.upic.cacheWriter.CacheWriter;
 import com.upic.mongoPool.MongoPool;
 import com.upic.query.GetDayVertical;
 import com.upic.query.GetTotalVertical;
@@ -29,6 +30,7 @@ public class SkierServlet extends HttpServlet {
   private RabbitmqPool rabbitmqPool;
   private RedisPool redisPool;
   private MongoCollection<Document> mongoCollection;
+  private CacheWriter cacheWriter;
 
   @Override
   public void init() throws ServletException {
@@ -40,6 +42,8 @@ public class SkierServlet extends HttpServlet {
     this.redisPool = RedisPool.getInstance();
     // setup MongoDB channel pool
     this.mongoCollection = MongoPool.getInstance().getCollection();
+    // setup Redis cache writer
+    this.cacheWriter = CacheWriter.getInstance();
   }
 
   @Override
@@ -48,16 +52,22 @@ public class SkierServlet extends HttpServlet {
     String path = request.getPathInfo();
     Query query;
     String result;
+
     // determine query type: GetDayVertical or GetTotalVertical
     if (path.matches("/\\d+/seasons/\\d+/days/\\d+/skiers/\\d+")) {
-      query = new GetDayVertical(this.gson, path, redisPool, mongoCollection);
+      query = new GetDayVertical(this.gson, path, redisPool, mongoCollection, cacheWriter);
     } else if (path.matches("/\\d+/vertical")) {
-      String seasonVal = request.getParameter("season");
-      if (seasonVal == null) {
-        query = new GetTotalVertical(this.gson, path, redisPool, mongoCollection);
+      String resortID = request.getParameter("resort");
+      String seasonID = request.getParameter("season");
+      if (seasonID == null) {
+        // adds query parameter resort to the path
+        query = new GetTotalVertical(this.gson, path + "/resort/" + resortID, redisPool,
+            mongoCollection, cacheWriter);
       } else {
-        // parameters are not included in the path string, simply appends season info to the path
-        query = new GetTotalVertical(this.gson, path + "/season/" + seasonVal, redisPool, mongoCollection);
+        // adds query parameters resort and season to the path
+        query = new GetTotalVertical(this.gson,
+            path + "/resort/" + resortID + "/season/" + seasonID, redisPool, mongoCollection,
+            cacheWriter);
       }
     } else {
       response.sendError(HttpServletResponse.SC_BAD_REQUEST);
@@ -85,7 +95,7 @@ public class SkierServlet extends HttpServlet {
       }
       System.out.println("mongodb miss");
       response.getWriter().write("N/A");
-      response.setStatus(HttpServletResponse.SC_OK);
+      response.setStatus(HttpServletResponse.SC_NOT_FOUND);
     } else {
       response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
     }

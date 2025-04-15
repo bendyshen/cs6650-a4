@@ -5,11 +5,18 @@ import static com.mongodb.client.model.Aggregates.group;
 import static com.mongodb.client.model.Aggregates.match;
 import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
-import static com.upic.validator.Params.*;
+import static com.upic.validator.Params.RESORT_ID_LOWER_BOUND;
+import static com.upic.validator.Params.RESORT_ID_UPPER_BOUND;
+import static com.upic.validator.Params.SEASON_ID_LOWER_BOUND;
+import static com.upic.validator.Params.SEASON_ID_UPPER_BOUND;
+import static com.upic.validator.Params.SKIER_ID_LOWER_BOUND;
+import static com.upic.validator.Params.SKIER_ID_UPPER_BOUND;
 
 import com.google.gson.Gson;
 import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.MongoCollection;
+import com.upic.cacheWriter.CacheWriter;
+import com.upic.cacheWriter.HincrByTask;
 import com.upic.redisPool.RedisPool;
 import java.util.Arrays;
 import java.util.List;
@@ -31,15 +38,18 @@ public class GetTotalVertical extends Query {
   private int seasonID;
   private int skierID;
   private int resortID;
+
   /**
    * Constructor of GetTotalVertical.
-   * @param gson        gson object
-   * @param urlPath     the url path of GET request
-   * @param redisPool   the redis channel pool
-   * @param collection  the mongodb collection reference
+   *
+   * @param gson       gson object
+   * @param urlPath    the url path of GET request
+   * @param redisPool  the redis channel pool
+   * @param collection the mongodb collection reference
    */
-  public GetTotalVertical(Gson gson, String urlPath, RedisPool redisPool, MongoCollection<Document> collection) {
-    super(gson, redisPool, collection);
+  public GetTotalVertical(Gson gson, String urlPath, RedisPool redisPool,
+      MongoCollection<Document> collection, CacheWriter cacheWriter) {
+    super(gson, redisPool, collection, cacheWriter);
     this.urlPath = urlPath;
     this.seasonID = -1;
     this.skierID = -1;
@@ -49,7 +59,7 @@ public class GetTotalVertical extends Query {
   @Override
   public boolean validate() {
     String[] parts = urlPath.split("/");
-    // ["", {skierID}, vertical, resort, resortID] or ["", {skierID}, "vertical", resort, resortID, "season", {seasonID}]
+    // ["", {skierID}, "vertical", "resort", {resortID}] or ["", {skierID}, "vertical", "resort", {resortID}, "season", {seasonID}]
     if (parts.length != 5 && parts.length != 7) {
       return false;
     }
@@ -58,20 +68,18 @@ public class GetTotalVertical extends Query {
       this.resortID = Integer.parseInt(parts[4]);
       if (parts.length == 5) {
         return skierID >= SKIER_ID_LOWER_BOUND.getInt()
-                && skierID <= SKIER_ID_UPPER_BOUND.getInt()
-                && resortID >= RESORT_ID_LOWER_BOUND.getInt()
-                && resortID <= RESORT_ID_UPPER_BOUND.getInt();
+            && skierID <= SKIER_ID_UPPER_BOUND.getInt()
+            && resortID >= RESORT_ID_LOWER_BOUND.getInt()
+            && resortID <= RESORT_ID_UPPER_BOUND.getInt();
       }
-
       // optional param: seasonID
       this.seasonID = Integer.parseInt(parts[6]);
       return skierID >= SKIER_ID_LOWER_BOUND.getInt()
-              && skierID <= SKIER_ID_UPPER_BOUND.getInt()
-              && resortID >= RESORT_ID_LOWER_BOUND.getInt()
-              && resortID <= RESORT_ID_UPPER_BOUND.getInt()
-              && seasonID >= SEASON_ID_LOWER_BOUND.getInt()
-              && seasonID <= SEASON_ID_UPPER_BOUND.getInt();
-
+          && skierID <= SKIER_ID_UPPER_BOUND.getInt()
+          && resortID >= RESORT_ID_LOWER_BOUND.getInt()
+          && resortID <= RESORT_ID_UPPER_BOUND.getInt()
+          && seasonID >= SEASON_ID_LOWER_BOUND.getInt()
+          && seasonID <= SEASON_ID_UPPER_BOUND.getInt();
     } catch (NumberFormatException e) {
       System.err.println(e.getMessage());
       return false;
@@ -80,19 +88,20 @@ public class GetTotalVertical extends Query {
 
   /**
    * Helper method. Get the redis key.
+   *
    * @return the redis key
    */
   private String getRedisKey() {
     if (seasonID == -1) {
-      return "skier:" + skierID + ":vertical";
+      return "skier:" + skierID + ":resort:" + resortID + ":vertical";
     }
-    return "skier:" + skierID + ":season:" + seasonID + ":vertical";
+    return "skier:" + skierID + ":resort:" + resortID + ":season:" + seasonID + ":vertical";
   }
 
   @Override
   public String queryRedis() {
     String key = getRedisKey();
-    try(Jedis jedis = RedisPool.getInstance().borrowChannel()) {
+    try (Jedis jedis = RedisPool.getInstance().borrowChannel()) {
       if (jedis.exists(key)) {
         return gson.toJson(jedis.hget(key, "vertical"));
       }
@@ -108,9 +117,10 @@ public class GetTotalVertical extends Query {
     try {
       List<Bson> pipeline;
       if (seasonID == -1) {
-       pipeline = Arrays.asList(
+        pipeline = Arrays.asList(
             match(and(
-                eq("skierID", skierID)
+                eq("skierID", skierID),
+                eq("resortID", resortID)
             )),
             group(null, sum("totalVertical", "$vertical"))
         );
@@ -118,6 +128,7 @@ public class GetTotalVertical extends Query {
         pipeline = Arrays.asList(
             match(and(
                 eq("skierID", skierID),
+                eq("resortID", resortID),
                 eq("seasonID", seasonID)
             )),
             group(null, sum("totalVertical", "$vertical"))
@@ -128,14 +139,9 @@ public class GetTotalVertical extends Query {
       if (doc == null) {
         return null;
       }
-      // writes to Redis
       long value = doc.getInteger("totalVertical");
-      try (Jedis jedis = redisPool.borrowChannel()) {
-        String key = getRedisKey();
-        jedis.hincrBy(key, "vertical", value);
-      } catch (Exception e) {
-        System.out.println("failed to cache data read from MongoDB");
-      }
+      // writes to Redis
+      cacheWriter.writeToCache(new HincrByTask(redisPool, getRedisKey(), value));
       return String.valueOf(value);
     } catch (Exception e) {
       System.out.println("exception: " + e);

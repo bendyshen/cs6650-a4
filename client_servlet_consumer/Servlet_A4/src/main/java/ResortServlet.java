@@ -1,5 +1,6 @@
 import com.google.gson.Gson;
 import com.mongodb.client.MongoCollection;
+import com.upic.cacheWriter.CacheWriter;
 import com.upic.mongoPool.MongoPool;
 import com.upic.query.GetResortSkiers;
 import com.upic.query.Query;
@@ -18,6 +19,7 @@ public class ResortServlet extends HttpServlet {
   private Gson gson;
   private RedisPool redisPool;
   private MongoCollection<Document> mongoCollection;
+  private CacheWriter cacheWriter;
 
   @Override
   public void init() throws ServletException {
@@ -27,6 +29,8 @@ public class ResortServlet extends HttpServlet {
     this.redisPool = RedisPool.getInstance();
     // setup MongoDB channel pool
     this.mongoCollection = MongoPool.getInstance().getCollection();
+    // setup Redis cache writer
+    this.cacheWriter = CacheWriter.getInstance();
   }
 
   @Override
@@ -38,7 +42,7 @@ public class ResortServlet extends HttpServlet {
     String result;
     // determine query type: GetResortSkiers
     if (path.matches("/\\d+/seasons/\\d+/day/\\d+/skiers")) {
-      query = new GetResortSkiers(this.gson, path, redisPool, mongoCollection);
+      query = new GetResortSkiers(this.gson, path, redisPool, mongoCollection, cacheWriter);
       System.out.println("valid path");
     } else {
       System.out.println("invalid path");
@@ -67,7 +71,7 @@ public class ResortServlet extends HttpServlet {
       }
       System.out.println("mongodb miss");
       response.getWriter().write("N/A");
-      response.setStatus(HttpServletResponse.SC_OK);
+      response.setStatus(HttpServletResponse.SC_NOT_FOUND);
     } else {
       response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
     }

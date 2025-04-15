@@ -17,6 +17,8 @@ import static com.upic.validator.Params.SKIER_ID_UPPER_BOUND;
 import com.google.gson.Gson;
 import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.MongoCollection;
+import com.upic.cacheWriter.CacheWriter;
+import com.upic.cacheWriter.HincrByTask;
 import com.upic.redisPool.RedisPool;
 import java.util.Arrays;
 import java.util.List;
@@ -41,14 +43,15 @@ public class GetDayVertical extends Query {
 
   /**
    * Constructor of GetDayVertical.
-   * @param gson        gson object
-   * @param urlPath     the url path of GET request
-   * @param redisPool   the redis channel pool
-   * @param collection  the mongodb collection reference
+   *
+   * @param gson       gson object
+   * @param urlPath    the url path of GET request
+   * @param redisPool  the redis channel pool
+   * @param collection the mongodb collection reference
    */
   public GetDayVertical(Gson gson, String urlPath, RedisPool redisPool,
-      MongoCollection<Document> collection) {
-    super(gson, redisPool, collection);
+      MongoCollection<Document> collection, CacheWriter cacheWriter) {
+    super(gson, redisPool, collection, cacheWriter);
     this.urlPath = urlPath;
     this.resortID = -1;
     this.seasonID = -1;
@@ -76,10 +79,12 @@ public class GetDayVertical extends Query {
 
   /**
    * Helper method. Get the redis key.
+   *
    * @return the redis key
    */
   private String getRedisKey() {
-    return "skier:" + skierID + ":season:" + seasonID + ":day:" + dayID + ":vertical";
+    return "skier:" + skierID + ":resort:" + resortID + ":season:" + seasonID + ":day:" + dayID
+        + ":vertical";
   }
 
   @Override
@@ -112,14 +117,8 @@ public class GetDayVertical extends Query {
       if (doc == null) {
         return null;
       }
-      // writes to Redis
       long value = doc.getInteger("totalVertical");
-      try (Jedis jedis = redisPool.borrowChannel()) {
-        String key = getRedisKey();
-        jedis.hincrBy(key, "vertical", value);
-      } catch (Exception e) {
-        System.out.println("failed to cache data read from MongoDB");
-      }
+      cacheWriter.writeToCache(new HincrByTask(redisPool, getRedisKey(), value));
       return String.valueOf(value);
     } catch (Exception e) {
       System.out.println("exception: " + e);

@@ -394,3 +394,301 @@
 2025-04-14 15:57:27:751 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
 2025-04-14 15:57:27:751 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/48.459(s) = 4127.200313667224
 2025-04-14 15:57:27:751 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-14 17:33:56:131 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-14 17:33:57:158 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-14 17:33:57:161 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-14 17:34:22:443 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-14 17:34:22:444 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-14 17:34:22:453 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-14 17:34:23:039 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-14 17:34:23:111 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-14 17:34:23:123 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      0 ms
+2025-04-14 17:34:23:130 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      1543 ms
+2025-04-14 17:34:23:140 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     21.795155 ms
+2025-04-14 17:34:23:140 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   5.0 ms
+2025-04-14 17:34:23:141 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      1210 ms
+2025-04-14 17:34:23:141 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-14 17:34:23:141 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-14 17:34:23:141 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-14 17:34:23:142 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-14 17:34:23:142 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/25.281(s) = 7911.079466793244
+2025-04-14 17:34:23:142 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-14 17:35:05:796 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-14 17:35:06:821 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-14 17:35:06:823 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-14 17:35:30:945 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-14 17:35:30:946 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-14 17:35:30:956 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-14 17:35:31:596 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-14 17:35:31:672 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-14 17:35:31:681 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      0 ms
+2025-04-14 17:35:31:690 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      1647 ms
+2025-04-14 17:35:31:705 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     21.51713 ms
+2025-04-14 17:35:31:705 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   5.0 ms
+2025-04-14 17:35:31:705 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      679 ms
+2025-04-14 17:35:31:706 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-14 17:35:31:706 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-14 17:35:31:707 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-14 17:35:31:707 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-14 17:35:31:707 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/24.122(s) = 8291.186468783682
+2025-04-14 17:35:31:707 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-14 17:36:04:344 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-14 17:36:05:372 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-14 17:36:05:375 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-14 17:36:30:455 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-14 17:36:30:455 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-14 17:36:30:462 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-14 17:36:31:079 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-14 17:36:31:148 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-14 17:36:31:161 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      0 ms
+2025-04-14 17:36:31:172 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      1652 ms
+2025-04-14 17:36:31:181 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     22.456825 ms
+2025-04-14 17:36:31:182 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   5.0 ms
+2025-04-14 17:36:31:182 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      940 ms
+2025-04-14 17:36:31:182 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-14 17:36:31:182 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-14 17:36:31:182 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-14 17:36:31:182 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-14 17:36:31:182 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/25.08(s) = 7974.481658692185
+2025-04-14 17:36:31:182 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-14 18:58:00:315 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-14 18:58:01:342 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-14 18:58:01:344 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-14 18:58:48:653 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-14 18:58:48:653 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-14 18:58:48:660 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-14 18:58:49:134 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-14 18:58:49:192 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-14 18:58:49:200 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      9 ms
+2025-04-14 18:58:49:207 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      492 ms
+2025-04-14 18:58:49:216 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     31.357205 ms
+2025-04-14 18:58:49:216 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   30.0 ms
+2025-04-14 18:58:49:216 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      77 ms
+2025-04-14 18:58:49:217 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-14 18:58:49:217 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-14 18:58:49:217 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-14 18:58:49:217 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-14 18:58:49:217 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/47.309(s) = 4227.525417996576
+2025-04-14 18:58:49:217 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-14 19:00:00:965 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-14 19:00:01:990 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-14 19:00:01:992 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-14 19:00:20:645 [Thread-144] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:645 [Thread-145] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:646 [Thread-137] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:649 [Thread-143] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:649 [Thread-141] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:649 [Thread-138] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:650 [Thread-139] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:650 [Thread-136] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:651 [Thread-140] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:651 [Thread-132] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:654 [Thread-142] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:655 [Thread-133] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:655 [Thread-134] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:660 [Thread-163] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:660 [Thread-160] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:660 [Thread-158] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:661 [Thread-146] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:662 [Thread-164] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:662 [Thread-165] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:662 [Thread-195] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:663 [Thread-162] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:663 [Thread-161] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:663 [Thread-153] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:664 [Thread-151] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:666 [Thread-159] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:666 [Thread-150] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:666 [Thread-190] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:666 [Thread-157] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:666 [Thread-156] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:667 [Thread-199] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:667 [Thread-149] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:667 [Thread-147] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:669 [Thread-185] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:669 [Thread-191] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:669 [Thread-198] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:669 [Thread-189] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:669 [Thread-193] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:669 [Thread-187] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:669 [Thread-154] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:669 [Thread-155] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:670 [Thread-152] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:670 [Thread-186] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:670 [Thread-148] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:670 [Thread-188] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:671 [Thread-184] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:671 [Thread-197] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:672 [Thread-179] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:672 [Thread-192] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:672 [Thread-194] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:20:676 [Thread-168] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:00:53:342 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-14 19:00:53:343 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-14 19:00:53:352 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-14 19:00:53:835 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-14 19:00:53:896 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-14 19:00:53:905 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      9 ms
+2025-04-14 19:00:53:912 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      1701 ms
+2025-04-14 19:00:53:922 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     31.673655 ms
+2025-04-14 19:00:53:922 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   26.0 ms
+2025-04-14 19:00:53:922 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      255 ms
+2025-04-14 19:00:53:922 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-14 19:00:53:923 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-14 19:00:53:923 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-14 19:00:53:923 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-14 19:00:53:923 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/51.35(s) = 3894.8393378773126
+2025-04-14 19:00:53:923 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-14 19:01:52:530 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-14 19:01:53:553 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-14 19:01:53:554 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-14 19:02:11:674 [Thread-193] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:674 [Thread-195] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:674 [Thread-3] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:676 [Thread-199] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:676 [Thread-190] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:680 [Thread-180] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:680 [Thread-183] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:680 [Thread-178] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:681 [Thread-173] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:682 [Thread-196] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:682 [Thread-186] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:682 [Thread-198] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:682 [Thread-187] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:682 [Thread-181] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:682 [Thread-188] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:682 [Thread-176] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:682 [Thread-159] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:682 [Thread-191] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:682 [Thread-174] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:682 [Thread-172] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:682 [Thread-165] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:684 [Thread-189] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:684 [Thread-164] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:684 [Thread-168] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:684 [Thread-197] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:686 [Thread-185] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:686 [Thread-163] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:686 [Thread-169] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:686 [Thread-167] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:686 [Thread-182] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:686 [Thread-184] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:686 [Thread-158] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:686 [Thread-179] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:686 [Thread-166] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:687 [Thread-8] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:689 [Thread-175] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:689 [Thread-145] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:689 [Thread-150] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:689 [Thread-141] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:689 [Thread-153] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:689 [Thread-147] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:689 [Thread-21] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:689 [Thread-151] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:689 [Thread-170] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:689 [Thread-162] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:690 [Thread-149] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:690 [Thread-171] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:11:873 [Thread-171] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (2/5)
+2025-04-14 19:02:11:875 [Thread-162] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (2/5)
+2025-04-14 19:02:11:879 [Thread-170] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (2/5)
+2025-04-14 19:02:12:675 [Thread-152] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:12:675 [Thread-157] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:12:677 [Thread-144] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:12:677 [Thread-161] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:12:677 [Thread-160] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:12:678 [Thread-177] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:12:681 [Thread-156] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:12:682 [Thread-192] WARN  com.upic.SimulationRunner - [java.net.SocketException: Connection reset, status code: 0] retrying ... (1/5)
+2025-04-14 19:02:46:046 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-14 19:02:46:046 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-14 19:02:46:055 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-14 19:02:46:523 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-14 19:02:46:576 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-14 19:02:46:583 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      9 ms
+2025-04-14 19:02:46:590 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      1961 ms
+2025-04-14 19:02:46:600 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     33.621245 ms
+2025-04-14 19:02:46:600 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   27.0 ms
+2025-04-14 19:02:46:600 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      261 ms
+2025-04-14 19:02:46:600 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-14 19:02:46:600 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-14 19:02:46:600 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-14 19:02:46:600 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-14 19:02:46:600 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/52.492(s) = 3810.104396860474
+2025-04-14 19:02:46:601 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-15 00:36:09:674 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-15 00:36:10:703 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-15 00:36:10:705 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-15 00:36:35:214 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-15 00:36:35:214 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-15 00:36:35:223 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-15 00:36:35:875 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-15 00:36:35:939 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-15 00:36:35:952 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      0 ms
+2025-04-15 00:36:35:962 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      1763 ms
+2025-04-15 00:36:35:973 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     20.594115 ms
+2025-04-15 00:36:35:974 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   6.0 ms
+2025-04-15 00:36:35:974 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      409 ms
+2025-04-15 00:36:35:974 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-15 00:36:35:974 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-15 00:36:35:974 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-15 00:36:35:974 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-15 00:36:35:974 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/24.509(s) = 8160.267656779142
+2025-04-15 00:36:35:975 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-15 01:03:20:117 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-15 01:03:21:143 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-15 01:03:21:144 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-15 01:04:01:347 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-15 01:04:01:347 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-15 01:04:01:354 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-15 01:04:01:888 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-15 01:04:01:954 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-15 01:04:01:964 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      9 ms
+2025-04-15 01:04:01:973 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      1060 ms
+2025-04-15 01:04:01:984 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     25.182045 ms
+2025-04-15 01:04:01:984 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   23.0 ms
+2025-04-15 01:04:01:984 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      75 ms
+2025-04-15 01:04:01:985 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-15 01:04:01:985 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-15 01:04:01:985 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-15 01:04:01:986 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-15 01:04:01:986 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/40.203(s) = 4974.753127876029
+2025-04-15 01:04:01:986 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-15 01:05:33:133 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-15 01:05:34:157 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-15 01:05:34:158 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-15 01:06:16:864 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-15 01:06:16:865 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-15 01:06:16:875 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-15 01:06:17:321 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-15 01:06:17:379 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-15 01:06:17:386 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      9 ms
+2025-04-15 01:06:17:393 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      1032 ms
+2025-04-15 01:06:17:402 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     28.13661 ms
+2025-04-15 01:06:17:402 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   27.0 ms
+2025-04-15 01:06:17:403 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      74 ms
+2025-04-15 01:06:17:403 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-15 01:06:17:404 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-15 01:06:17:404 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-15 01:06:17:404 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-15 01:06:17:404 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/42.706(s) = 4683.1826909567735
+2025-04-15 01:06:17:404 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-15 01:07:21:581 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-15 01:07:22:601 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-15 01:07:22:602 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-15 01:08:04:859 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-15 01:08:04:860 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-15 01:08:04:868 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-15 01:08:05:295 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-15 01:08:05:351 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-15 01:08:05:358 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      9 ms
+2025-04-15 01:08:05:365 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      1058 ms
+2025-04-15 01:08:05:373 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     27.296215 ms
+2025-04-15 01:08:05:374 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   26.0 ms
+2025-04-15 01:08:05:374 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      64 ms
+2025-04-15 01:08:05:375 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-15 01:08:05:375 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-15 01:08:05:375 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-15 01:08:05:375 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-15 01:08:05:375 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/42.257(s) = 4732.9436543057955
+2025-04-15 01:08:05:375 [main] INFO  com.upic.SimulationRunner - client shut down

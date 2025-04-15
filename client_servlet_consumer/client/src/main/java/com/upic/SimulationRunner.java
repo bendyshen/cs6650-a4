@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 public class SimulationRunner {
 
   // url for EC2 testing
-  private static final String EC2_BASE_URL = "http://54.148.43.13:8080/Servlet_A4"; // TODO: check before run
+  private static final String EC2_BASE_URL = "http://tomcat-429414970.us-west-2.elb.amazonaws.com/Servlet_A4"; // TODO: check before run
 
   // consumer thread pool parameters
   private static final int CONSUMER_POOL_SIZE = 200;

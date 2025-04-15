@@ -1,5 +1,6 @@
 package com.upic.contextListener;
 
+import com.upic.cacheWriter.CacheWriter;
 import com.upic.mongoPool.MongoPool;
 import com.upic.rabbitmqPool.RabbitmqPool;
 import com.upic.redisPool.RedisPool;
@@ -15,6 +16,7 @@ public class ContextListener implements ServletContextListener {
     RedisPool.getInstance();
     MongoPool.getInstance();
     RabbitmqPool.getInstance();
+    CacheWriter.getInstance();
   }
 
   @Override
@@ -22,5 +24,6 @@ public class ContextListener implements ServletContextListener {
     RedisPool.getInstance().close();
     MongoPool.getInstance().close();
     RabbitmqPool.getInstance().close();
+    CacheWriter.getInstance().shutdown();
   }
 }

@@ -14,6 +14,8 @@ import static com.upic.validator.Params.SEASON_ID_UPPER_BOUND;
 import com.google.gson.Gson;
 import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.MongoCollection;
+import com.upic.cacheWriter.CacheWriter;
+import com.upic.cacheWriter.SaddTask;
 import com.upic.redisPool.RedisPool;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,7 +23,6 @@ import java.util.List;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.Pipeline;
 
 /**
  * GetResortSkiers class. It gets the number of unique skiers at resort/season/day. e.g. Key:
@@ -43,8 +44,8 @@ public class GetResortSkiers extends Query {
    * @param collection  the mongodb collection reference
    */
   public GetResortSkiers(Gson gson, String urlPath, RedisPool redisPool,
-      MongoCollection<Document> collection) {
-    super(gson, redisPool, collection);
+      MongoCollection<Document> collection, CacheWriter cacheWriter) {
+    super(gson, redisPool, collection, cacheWriter);
     this.urlPath = urlPath;
     this.resortID = -1;
     this.seasonID = -1;
@@ -105,17 +106,7 @@ public class GetResortSkiers extends Query {
       for (Document doc : result) {
         uniqueSkiers.add(doc.get("_id").toString());
       }
-      // writes to Redis
-      try (Jedis jedis = redisPool.borrowChannel()) {
-        Pipeline pipe = jedis.pipelined();
-        String key = getRedisKey();
-        for (String skierID : uniqueSkiers) {
-          pipe.sadd(key, skierID);
-        }
-        pipe.sync();
-      } catch (Exception e) {
-        System.out.println("failed to cache data read from MongoDB");
-      }
+      cacheWriter.writeToCache(new SaddTask(redisPool, getRedisKey(), uniqueSkiers));
       return String.valueOf(uniqueSkiers.size());
     } catch (Exception e) {
       System.out.println("exception: " + e);

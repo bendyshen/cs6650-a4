@@ -11,7 +11,8 @@ public enum TaskParams {
   SKIER_ID_MAX(100_000),
 
   RESORT_ID_MIN(1),
-  RESORT_ID_MAX(10),
+//  RESORT_ID_MAX(10),
+  RESORT_ID_MAX(1),
 
   LIFT_ID_MIN(1),
   LIFT_ID_MAX(40),
