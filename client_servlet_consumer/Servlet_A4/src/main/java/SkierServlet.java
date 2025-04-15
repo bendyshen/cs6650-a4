@@ -84,7 +84,8 @@ public class SkierServlet extends HttpServlet {
         return;
       }
       System.out.println("mongodb miss");
-      response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+      response.getWriter().write("N/A");
+      response.setStatus(HttpServletResponse.SC_OK);
     } else {
       response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
     }
