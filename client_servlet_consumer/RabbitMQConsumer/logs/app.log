@@ -597,3 +597,13 @@
 2025-04-15 00:36:39:698 [main] INFO  ConsumerRunner - -------------------------Simulation Summary-------------------------
 2025-04-15 00:36:39:698 [main] INFO  ConsumerRunner - [REDIS TOTAL WRITE]       200000
 2025-04-15 00:36:39:699 [main] INFO  ConsumerRunner - [MONGO TOTAL WRITE]       200000
+2025-04-15 12:35:37:439 [main] INFO  ConsumerRunner - rabbitmq connection pool initialization successful
+2025-04-15 12:35:42:653 [main] INFO  ConsumerRunner - redis connection pool initialization successful
+2025-04-15 12:35:42:742 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[44.243.204.170:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-04-15 12:35:42:771 [main] INFO  ConsumerRunner - simulation started
+2025-04-15 12:35:42:779 [main] INFO  ConsumerRunner - redis worker pools started, ready to write messages
+2025-04-15 12:35:42:797 [main] INFO  ConsumerRunner - mongo worker pools started, ready to write messages
+2025-04-15 12:35:42:834 [cluster-ClusterId{value='67feb50ed04c8508b6be6484', description='null'}-44.243.204.170:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:121}] to 44.243.204.170:27017
+2025-04-15 12:35:42:834 [cluster-rtt-ClusterId{value='67feb50ed04c8508b6be6484', description='null'}-44.243.204.170:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:122}] to 44.243.204.170:27017
+2025-04-15 12:35:42:834 [cluster-ClusterId{value='67feb50ed04c8508b6be6484', description='null'}-44.243.204.170:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=44.243.204.170:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=49344459}
+2025-04-15 12:35:42:941 [MaintenanceTimer-1-thread-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:123}] to 44.243.204.170:27017

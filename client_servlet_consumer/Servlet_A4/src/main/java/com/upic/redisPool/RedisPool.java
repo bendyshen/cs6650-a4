@@ -9,10 +9,10 @@ import redis.clients.jedis.JedisPoolConfig;
  * the user.
  */
 public class RedisPool {
-  private static final String REDIS_HOST = "35.166.44.124";   // TODO: check before run
+  private static final String REDIS_HOST = "35.91.207.184";   // TODO: check before run
   private static final int REDIS_PORT = 6379;             // TODO: check before run
   private static final int REDIS_POOL_SIZE = 32;
-  private static final int MIN_IDLE = 0;
+  private static final int MIN_IDLE = 1;
   private static final Boolean IS_TEST_ON = true;
   private final JedisPool jedisPool;
   private static RedisPool instance;

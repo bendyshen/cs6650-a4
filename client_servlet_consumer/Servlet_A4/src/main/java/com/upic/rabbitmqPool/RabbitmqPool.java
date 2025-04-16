@@ -23,7 +23,7 @@ public class RabbitmqPool {
   public static final String EXCHANGE_NAME = "LiftRidePostExchange";            // TODO: check before run
   public static final String POST_ROUTING_KEY = "LiftRidePostRoutingKey";       // TODO: check before run
   private static final String POST_QUEUE_NAME = "LiftRidePostQueue";            // TODO: check before run
-  private static final String URI_STRING = "amqp://guest:guest@34.213.12.119:5672"; // TODO: check before run
+  private static final String URI_STRING = "amqp://guest:guest@34.222.45.112:5672"; // TODO: check before run
   private static final int CHANNEL_POOL_SIZE = 32;
 
   private static final Boolean IS_TEST_ON = true;

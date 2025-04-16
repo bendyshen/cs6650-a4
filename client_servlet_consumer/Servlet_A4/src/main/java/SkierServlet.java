@@ -75,25 +75,20 @@ public class SkierServlet extends HttpServlet {
     }
     // if query is valid
     if (query.validate()) {
-      System.out.println("Query validated.");
       result = query.queryRedis();
       // Redis hit
       if (result != null) {
-        System.out.println("redis hit");
         response.setStatus(HttpServletResponse.SC_OK);
         response.getWriter().write(result);
         return;
       }
       // Redis miss
-      System.out.println("redis miss");
       result = query.queryMongoDB();
       if (result != null) {
-        System.out.println("mongodb hit");
         response.setStatus(HttpServletResponse.SC_OK);
         response.getWriter().write(result);
         return;
       }
-      System.out.println("mongodb miss");
       response.getWriter().write("N/A");
       response.setStatus(HttpServletResponse.SC_NOT_FOUND);
     } else {

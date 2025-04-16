@@ -12,6 +12,7 @@ import static com.upic.validator.Params.SEASON_ID_LOWER_BOUND;
 import static com.upic.validator.Params.SEASON_ID_UPPER_BOUND;
 
 import com.google.gson.Gson;
+import com.mongodb.ReadPreference;
 import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.MongoCollection;
 import com.upic.cacheWriter.CacheWriter;
@@ -38,10 +39,11 @@ public class GetResortSkiers extends Query {
 
   /**
    * Constructor of GetResortSkier.
-   * @param gson        gson object
-   * @param urlPath     the url path of GET request
-   * @param redisPool   the redis channel pool
-   * @param collection  the mongodb collection reference
+   *
+   * @param gson       gson object
+   * @param urlPath    the url path of GET request
+   * @param redisPool  the redis channel pool
+   * @param collection the mongodb collection reference
    */
   public GetResortSkiers(Gson gson, String urlPath, RedisPool redisPool,
       MongoCollection<Document> collection, CacheWriter cacheWriter) {
@@ -70,6 +72,7 @@ public class GetResortSkiers extends Query {
 
   /**
    * Helper method. Get the redis key.
+   *
    * @return the redis key
    */
   private String getRedisKey() {
@@ -101,7 +104,8 @@ public class GetResortSkiers extends Query {
           )),
           group("$skierID")
       );
-      AggregateIterable<Document> result = collection.aggregate(pipeline);
+      AggregateIterable<Document> result = collection.withReadPreference(
+          ReadPreference.secondaryPreferred()).aggregate(pipeline);
       List<String> uniqueSkiers = new ArrayList<>();
       for (Document doc : result) {
         uniqueSkiers.add(doc.get("_id").toString());

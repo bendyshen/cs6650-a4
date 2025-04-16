@@ -692,3 +692,117 @@
 2025-04-15 01:08:05:375 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
 2025-04-15 01:08:05:375 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/42.257(s) = 4732.9436543057955
 2025-04-15 01:08:05:375 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-15 12:39:07:579 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-15 12:39:08:608 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-15 12:39:08:610 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-15 12:39:54:252 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-15 12:39:54:253 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-15 12:39:54:261 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-15 12:39:54:745 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-15 12:39:54:796 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-15 12:39:54:802 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      9 ms
+2025-04-15 12:39:54:809 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      387 ms
+2025-04-15 12:39:54:821 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     32.031615 ms
+2025-04-15 12:39:54:821 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   30.0 ms
+2025-04-15 12:39:54:821 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      90 ms
+2025-04-15 12:39:54:822 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-15 12:39:54:822 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-15 12:39:54:822 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-15 12:39:54:822 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-15 12:39:54:822 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/45.641(s) = 4382.024933721873
+2025-04-15 12:39:54:822 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-15 12:41:32:455 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-15 12:41:33:479 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-15 12:41:33:481 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-15 12:42:16:781 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-15 12:42:16:782 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-15 12:42:16:790 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-15 12:42:17:296 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-15 12:42:17:359 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-15 12:42:17:370 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      10 ms
+2025-04-15 12:42:17:378 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      1049 ms
+2025-04-15 12:42:17:388 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     29.86989 ms
+2025-04-15 12:42:17:389 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   27.0 ms
+2025-04-15 12:42:17:389 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      103 ms
+2025-04-15 12:42:17:389 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-15 12:42:17:389 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-15 12:42:17:389 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-15 12:42:17:389 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-15 12:42:17:389 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/43.3(s) = 4618.937644341801
+2025-04-15 12:42:17:389 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-15 12:43:35:989 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-15 12:43:37:011 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-15 12:43:37:013 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-15 12:44:19:998 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-15 12:44:19:998 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-15 12:44:20:006 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-15 12:44:20:366 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-15 12:44:20:422 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-15 12:44:20:429 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      10 ms
+2025-04-15 12:44:20:435 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      286 ms
+2025-04-15 12:44:20:443 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     29.54733 ms
+2025-04-15 12:44:20:443 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   27.0 ms
+2025-04-15 12:44:20:443 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      84 ms
+2025-04-15 12:44:20:443 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-15 12:44:20:444 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-15 12:44:20:444 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-15 12:44:20:444 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-15 12:44:20:444 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/42.984(s) = 4652.894100130281
+2025-04-15 12:44:20:444 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-15 13:19:49:280 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-15 13:19:50:301 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-15 13:19:50:304 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-15 13:20:33:348 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-15 13:20:33:350 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-15 13:20:33:361 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-15 13:20:33:870 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-15 13:20:33:929 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-15 13:20:33:937 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      10 ms
+2025-04-15 13:20:33:944 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      1074 ms
+2025-04-15 13:20:33:954 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     28.49929 ms
+2025-04-15 13:20:33:954 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   26.0 ms
+2025-04-15 13:20:33:954 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      80 ms
+2025-04-15 13:20:33:955 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-15 13:20:33:955 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-15 13:20:33:955 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-15 13:20:33:955 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-15 13:20:33:955 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/43.044(s) = 4646.408326363721
+2025-04-15 13:20:33:955 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-15 13:22:37:081 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-15 13:22:38:103 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-15 13:22:38:105 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-15 13:23:23:571 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-15 13:23:23:572 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-15 13:23:23:582 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-15 13:23:24:026 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-15 13:23:24:079 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-15 13:23:24:087 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      9 ms
+2025-04-15 13:23:24:094 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      1067 ms
+2025-04-15 13:23:24:102 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     30.41546 ms
+2025-04-15 13:23:24:102 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   28.0 ms
+2025-04-15 13:23:24:102 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      101 ms
+2025-04-15 13:23:24:103 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-15 13:23:24:103 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-15 13:23:24:103 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-15 13:23:24:103 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-15 13:23:24:103 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/45.466(s) = 4398.891479347204
+2025-04-15 13:23:24:103 [main] INFO  com.upic.SimulationRunner - client shut down
+2025-04-15 13:24:53:354 [main] INFO  com.upic.SimulationRunner - initializing thread pool...
+2025-04-15 13:24:54:383 [main] INFO  com.upic.SimulationRunner - consumer threads started (200/200)
+2025-04-15 13:24:54:385 [main] INFO  com.upic.SimulationRunner - simulation started
+2025-04-15 13:25:36:377 [main] INFO  com.upic.SimulationRunner - simulation completed
+2025-04-15 13:25:36:377 [main] INFO  com.upic.SimulationRunner - shutting down thread pools...
+2025-04-15 13:25:36:385 [main] INFO  com.upic.SimulationRunner - writing request log...
+2025-04-15 13:25:36:843 [main] INFO  com.upic.SimulationRunner - calculating statistics...
+2025-04-15 13:25:36:904 [main] INFO  com.upic.SimulationRunner - -------------------------Latency Statistics-------------------------
+2025-04-15 13:25:36:911 [main] INFO  com.upic.SimulationRunner - [MIN RESPONSE TIME]      9 ms
+2025-04-15 13:25:36:918 [main] INFO  com.upic.SimulationRunner - [MAX RESPONSE TIME]      331 ms
+2025-04-15 13:25:36:928 [main] INFO  com.upic.SimulationRunner - [MEAN RESPONSE TIME]     27.5357 ms
+2025-04-15 13:25:36:928 [main] INFO  com.upic.SimulationRunner - [MEDIAN RESPONSE TIME]   25.0 ms
+2025-04-15 13:25:36:928 [main] INFO  com.upic.SimulationRunner - [P99 RESPONSE TIME]      74 ms
+2025-04-15 13:25:36:929 [main] INFO  com.upic.SimulationRunner - -------------------------Simulation Summary-------------------------
+2025-04-15 13:25:36:929 [main] INFO  com.upic.SimulationRunner - [REQUEST PRODUCED]       200000
+2025-04-15 13:25:36:929 [main] INFO  com.upic.SimulationRunner - [REQUEST SENT]           200000
+2025-04-15 13:25:36:929 [main] INFO  com.upic.SimulationRunner - [REQUEST FAILED]         0
+2025-04-15 13:25:36:929 [main] INFO  com.upic.SimulationRunner - [THROUGHPUT]             200000/41.99(s) = 4763.038818766373
+2025-04-15 13:25:36:929 [main] INFO  com.upic.SimulationRunner - client shut down

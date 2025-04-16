@@ -13,6 +13,7 @@ import static com.upic.validator.Params.SKIER_ID_LOWER_BOUND;
 import static com.upic.validator.Params.SKIER_ID_UPPER_BOUND;
 
 import com.google.gson.Gson;
+import com.mongodb.ReadPreference;
 import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.MongoCollection;
 import com.upic.cacheWriter.CacheWriter;
@@ -134,7 +135,8 @@ public class GetTotalVertical extends Query {
             group(null, sum("totalVertical", "$vertical"))
         );
       }
-      AggregateIterable<Document> result = collection.aggregate(pipeline);
+      AggregateIterable<Document> result = collection.withReadPreference(
+          ReadPreference.secondaryPreferred()).aggregate(pipeline);
       Document doc = result.first();
       if (doc == null) {
         return null;

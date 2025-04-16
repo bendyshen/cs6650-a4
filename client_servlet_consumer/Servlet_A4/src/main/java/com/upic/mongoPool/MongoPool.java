@@ -2,6 +2,7 @@ package com.upic.mongoPool;
 
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
+import com.mongodb.ReadPreference;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
@@ -10,11 +11,11 @@ import org.bson.Document;
 
 public class MongoPool {
 
-  private static final String MONGODB_CONNECTION_STRING = "mongodb://34.210.184.7:27017";  // TODO: check before run
+  private static final String MONGODB_CONNECTION_STRING = "mongodb://35.86.107.141:27017,35.85.56.232:27017,54.245.221.54:27017/?replicaSet=rs0";  // TODO: check before run
   private static final String MONGODB_DATABASE_NAME = "assignment4";                    // TODO: check before run
   private static final String MONGODB_COLLECTION_NAME = "LiftRide";                     // TODO: check before run
-  private static final int MAX_CONNECTIONS = 32;
-  private static final int MIN_IDLE_CONNECTIONS = 32;
+  private static final int MAX_CONNECTIONS = 128;
+  private static final int MIN_IDLE_CONNECTIONS = 64;
   private final MongoClient mongoClient;
   private final MongoCollection<Document> collection;
   private static MongoPool instance = null;
@@ -22,6 +23,7 @@ public class MongoPool {
   private MongoPool(String connectionString, int maxConnections, int minIdle) {
     MongoClientSettings settings = MongoClientSettings.builder()
         .applyConnectionString(new ConnectionString(connectionString))
+        .readPreference(ReadPreference.secondaryPreferred())
         .applyToConnectionPoolSettings(builder -> {
           builder.maxSize(maxConnections);
           builder.minSize(minIdle);
