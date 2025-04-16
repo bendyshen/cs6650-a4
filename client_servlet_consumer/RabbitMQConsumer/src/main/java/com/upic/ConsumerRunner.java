@@ -13,19 +13,19 @@ public class ConsumerRunner {
   private static final String RABBITMQ_EXCHANGE_NAME = "LiftRidePostExchange";  // TODO: check before run
   private static final String RABBITMQ_ROUTING_KEY = "LiftRidePostRoutingKey";  // TODO: check before run
   private static final String RABBITMQ_QUEUE_NAME = "LiftRidePostQueue";        // TODO: check before run
-  private static final String RABBITMQ_URI_STRING = "amqp://guest:guest@35.87.46.79:5672";  // TODO: check before run
+  private static final String RABBITMQ_URI_STRING = "amqp://guest:guest@34.219.50.132:5672";  // TODO: check before run
   // RabbitMQ channel pool parameters
   private static final int RABBITMQ_CONSUMER_COUNT = 128;
   private static final int RABBITMQ_PREFETCH_COUNT = 5000;
 
   // Redis connection parameters
-  private static final String REDIS_HOST = "35.163.154.133"; // TODO: check before run
+  private static final String REDIS_HOST = "52.89.79.167"; // TODO: check before run
   private static final int REDIS_PORT = 6379;             // TODO: check before run
   // Redis channel pool parameters
   private static final int REDIS_CHANNEL_POOL_SIZE = 128;
 
   // MongoDB connection parameters
-  private static final String MONGODB_CONNECTION_STRING = "mongodb://44.243.204.170:27017"; // TODO: check before run
+  private static final String MONGODB_CONNECTION_STRING = "mongodb://18.236.147.114:27017,34.222.138.29:27017,34.220.167.172:27017/?replicaSet=rs0&retryWrites=true&w=majority"; // TODO: check before run
   private static final String MONGODB_DATABASE_NAME = "assignment4";                      // TODO: check before run
   private static final String MONGODB_COLLECTION_NAME = "LiftRide";                       // TODO: check before run
   private static final int MONGODB_MAX_CONNECTIONS = 128;

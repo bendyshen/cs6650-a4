@@ -6,10 +6,11 @@ import redis.clients.jedis.JedisPoolConfig;
 
 /**
  * RedisPool class. It provides a Jedis channel pool that contains a number of channels specified by
- * the user.
+ * the user. Singleton pattern is used.
  */
 public class RedisPool {
-  private static final String REDIS_HOST = "35.91.207.184";   // TODO: check before run
+
+  private static final String REDIS_HOST = "52.89.79.167";   // TODO: check before run
   private static final int REDIS_PORT = 6379;             // TODO: check before run
   private static final int REDIS_POOL_SIZE = 32;
   private static final int MIN_IDLE = 1;
@@ -31,13 +32,14 @@ public class RedisPool {
 
   /**
    * Singleton pattern to get RedisPool instance.
+   *
    * @return the RedisPool instance
    */
   public static RedisPool getInstance() {
-     if (instance == null) {
-       instance = new RedisPool(REDIS_POOL_SIZE, REDIS_HOST, REDIS_PORT);
-     }
-     return instance;
+    if (instance == null) {
+      instance = new RedisPool(REDIS_POOL_SIZE, REDIS_HOST, REDIS_PORT);
+    }
+    return instance;
   }
 
   /**

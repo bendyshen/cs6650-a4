@@ -8,6 +8,10 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+/**
+ * ContextListener class. It manages the initialization and destruction of shared resources among
+ * all servlets.
+ */
 @WebListener
 public class ContextListener implements ServletContextListener {
 

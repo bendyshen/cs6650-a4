@@ -5,8 +5,8 @@ import com.upic.rabbitmqPool.RabbitmqPool;
 import java.nio.charset.StandardCharsets;
 
 /**
- * MessagePublisher class. It contains helper methods to publish message to an exchange using a given
- * channel.
+ * MessagePublisher class. It contains helper methods to publish message to an exchange using a
+ * given channel.
  */
 public class MessagePublisher {
 
@@ -16,7 +16,7 @@ public class MessagePublisher {
    * @param exchangeName the exchange name
    * @param routingKey   the routing key
    * @param message      the message body
-   * @param rabbitmqPool  the channel pool
+   * @param rabbitmqPool the channel pool
    * @throws Exception exception
    */
   public static void publishMessage(String exchangeName, String routingKey, String message,

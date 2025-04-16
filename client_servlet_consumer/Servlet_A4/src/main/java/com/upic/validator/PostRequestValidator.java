@@ -175,7 +175,8 @@ public class PostRequestValidator {
       return null;
     }
     if ((resortID >= RESORT_ID_LOWER_BOUND.getInt() && resortID <= RESORT_ID_UPPER_BOUND.getInt())
-        && (seasonID >= SEASON_ID_LOWER_BOUND.getInt() && seasonID <= SEASON_ID_UPPER_BOUND.getInt())
+        && (seasonID >= SEASON_ID_LOWER_BOUND.getInt()
+        && seasonID <= SEASON_ID_UPPER_BOUND.getInt())
         && (dayID >= DAY_ID_LOWER_BOUND.getInt() && dayID <= DAY_ID_UPPER_BOUND.getInt())
         && (skierID >= SKIER_ID_LOWER_BOUND.getInt() && skierID <= SKIER_ID_UPPER_BOUND.getInt())) {
       JsonObject paramsJson = new JsonObject();

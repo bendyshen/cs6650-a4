@@ -4,6 +4,10 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * CacheWriter class. It writes data read from database to the Redis cache asynchronously. Singleton
+ * pattern is used.
+ */
 public class CacheWriter {
 
   private static final int CORE_POOL_SIZE = 32;
@@ -13,6 +17,14 @@ public class CacheWriter {
   private final ThreadPoolExecutor workerPool;
   private static CacheWriter instance;
 
+  /**
+   * Constructor for CacheWriter class.
+   *
+   * @param corePoolSize    core thread count for the worker thread pool
+   * @param maximumPoolSize maximum thread count for the worker thread pool
+   * @param keepAliveTime   the keep alive time for each thread
+   * @param timeUnit        the time unit for keep alive time
+   */
   private CacheWriter(int corePoolSize, int maximumPoolSize, long keepAliveTime,
       TimeUnit timeUnit) {
     workerPool = new ThreadPoolExecutor(corePoolSize, maximumPoolSize, keepAliveTime, timeUnit,
@@ -21,6 +33,11 @@ public class CacheWriter {
     workerPool.allowCoreThreadTimeOut(true);
   }
 
+  /**
+   * Gets the CacheWriter instance.
+   *
+   * @return the CacheWriter instance
+   */
   public static CacheWriter getInstance() {
     if (instance == null) {
       instance = new CacheWriter(CORE_POOL_SIZE, MAX_POOL_SIZE, KEEP_ALIVE_TIME, TimeUnit.MINUTES);
@@ -28,17 +45,32 @@ public class CacheWriter {
     return instance;
   }
 
+  /**
+   * Calls hincrBy method to increment a hashed integer in Redis. Key and value are encapsulated
+   * inside the runnable task.
+   *
+   * @param task the runnable task
+   */
   public void writeToCache(HincrByTask task) {
     workerPool.submit(task);
   }
 
+  /**
+   * Calls sadd method to add elements into a set. Key and value are encapsulated inside the
+   * runnable task.
+   *
+   * @param task the runnable task
+   */
   public void writeToCache(SaddTask task) {
     workerPool.submit(task);
   }
 
+  /**
+   * Shuts down worker thread pool.
+   */
   public void shutdown() {
     try {
-      if(!workerPool.awaitTermination(AWAIT_SHUTDOWN_TIME, TimeUnit.SECONDS)) {
+      if (!workerPool.awaitTermination(AWAIT_SHUTDOWN_TIME, TimeUnit.SECONDS)) {
         workerPool.shutdownNow();
       }
     } catch (InterruptedException e) {

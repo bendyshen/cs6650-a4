@@ -8,7 +8,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 import org.bson.Document;
 import org.slf4j.Logger;
 
-
+/**
+ * MongoTask class. It represents a write operation to the MongoDB. It batch-writes all the messages
+ * processed in this task.
+ */
 public class MongoTask implements Runnable {
 
   private final Logger globalLogger;
@@ -18,7 +21,18 @@ public class MongoTask implements Runnable {
   private final CountDownLatch mongoLatch;
   private final AtomicInteger messageCounter;
 
-  public MongoTask(Logger globalLogger,  int batchSize, CountDownLatch mongoLatch, MongoCollection<Document> mongoCollection,
+  /**
+   * Constructor for MongoTask class.
+   *
+   * @param globalLogger        global logger used to log various information
+   * @param batchSize           the number of messages processed in the task
+   * @param mongoLatch          the countdown latch
+   * @param mongoCollection     the reference to the collection
+   * @param mongoQueue          the message queue that contains write data
+   * @param mongoMessageCounter the message counter
+   */
+  public MongoTask(Logger globalLogger, int batchSize, CountDownLatch mongoLatch,
+      MongoCollection<Document> mongoCollection,
       BlockingQueue<Document> mongoQueue, AtomicInteger mongoMessageCounter) {
     this.globalLogger = globalLogger;
     this.mongoCollection = mongoCollection;

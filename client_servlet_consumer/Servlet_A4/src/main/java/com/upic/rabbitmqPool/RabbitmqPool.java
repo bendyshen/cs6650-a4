@@ -16,14 +16,14 @@ import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
 /**
  * RabbitmqPool class. It creates a given number of dedicated channels that are assigned to the
- * publishers.
+ * publishers. Singleton pattern is used.
  */
 public class RabbitmqPool {
 
   public static final String EXCHANGE_NAME = "LiftRidePostExchange";            // TODO: check before run
   public static final String POST_ROUTING_KEY = "LiftRidePostRoutingKey";       // TODO: check before run
   private static final String POST_QUEUE_NAME = "LiftRidePostQueue";            // TODO: check before run
-  private static final String URI_STRING = "amqp://guest:guest@34.222.45.112:5672"; // TODO: check before run
+  private static final String URI_STRING = "amqp://guest:guest@34.219.50.132:5672"; // TODO: check before run
   private static final int CHANNEL_POOL_SIZE = 32;
 
   private static final Boolean IS_TEST_ON = true;
@@ -48,6 +48,7 @@ public class RabbitmqPool {
 
   /**
    * Singleton pattern to get RabbitmqPool instance.
+   *
    * @return the RabbitmqPool instance
    */
   public static RabbitmqPool getInstance() {
@@ -115,7 +116,7 @@ public class RabbitmqPool {
    * @param queueName    the queue name
    * @param routingKey   the routing key
    */
-  public void initConnection(String exchangeName, String routingKey,  String queueName) {
+  public void initConnection(String exchangeName, String routingKey, String queueName) {
     try (Channel temp = connection.createChannel()) {
       temp.exchangeDeclare(exchangeName, BuiltinExchangeType.DIRECT); // declare exchange
       temp.queueDeclare(queueName, true, false, false, null); // declare queue

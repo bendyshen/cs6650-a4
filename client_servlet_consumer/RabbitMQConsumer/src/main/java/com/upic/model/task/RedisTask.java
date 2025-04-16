@@ -16,7 +16,7 @@ import redis.clients.jedis.Pipeline;
 
 /**
  * RedisTask class. It represents a processing task that parse and cache skier's lift ride
- * information to a Redis instance.
+ * information to a Redis instance. It uses pipeline to batch-write to Redis instance.
  */
 public class RedisTask implements Runnable {
 

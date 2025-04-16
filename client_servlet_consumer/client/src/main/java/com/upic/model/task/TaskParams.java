@@ -11,7 +11,7 @@ public enum TaskParams {
   SKIER_ID_MAX(100_000),
 
   RESORT_ID_MIN(1),
-//  RESORT_ID_MAX(10),
+  //  RESORT_ID_MAX(10),
   RESORT_ID_MAX(1),
 
   LIFT_ID_MIN(1),
@@ -20,8 +20,8 @@ public enum TaskParams {
   SEASON_ID_MIN(2025),
   SEASON_ID_MAX(2025),
 
-  DAY_ID_MIN(1),
-  DAY_ID_MAX(1),
+  DAY_ID_MIN(3),
+  DAY_ID_MAX(3),
 
   TIME_MIN(1),
   TIME_MAX(360);

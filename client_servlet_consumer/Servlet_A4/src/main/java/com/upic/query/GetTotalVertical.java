@@ -31,7 +31,8 @@ import redis.clients.jedis.Jedis;
  * skiers:{skierID}:vertical, Value: int or Key: skiers:{skierID}:season:{seasonID}:vertical, Value:
  * int. Call incrBy(key, increment) to initializes the value to a key to 0 if the key does not
  * exist, otherwise increment the existing value by the amount passed as argument. API:
- * /skiers/{skierID}/vertical or /skiers/{skierID}/vertical?season=x
+ * /skiers/{skierID}/vertical?resort={resortID} or
+ * /skiers/{skierID}/vertical?resort={resortID}&season={seasonID}
  */
 public class GetTotalVertical extends Query {
 
