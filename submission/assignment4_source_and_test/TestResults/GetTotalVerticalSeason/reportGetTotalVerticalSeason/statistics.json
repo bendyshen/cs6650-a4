@@ -1,0 +1,34 @@
+{
+  "GetTotalVerticalSeason" : {
+    "transaction" : "GetTotalVerticalSeason",
+    "sampleCount" : 64000,
+    "errorCount" : 5815,
+    "errorPct" : 9.0859375,
+    "meanResTime" : 60.04403124999986,
+    "medianResTime" : 60.0,
+    "minResTime" : 11.0,
+    "maxResTime" : 335.0,
+    "pct1ResTime" : 79.0,
+    "pct2ResTime" : 82.0,
+    "pct3ResTime" : 103.0,
+    "throughput" : 1619.1464062539528,
+    "receivedKBytesPerSec" : 161.81984288429427,
+    "sentKBytesPerSec" : 316.06401953095354
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 64000,
+    "errorCount" : 5815,
+    "errorPct" : 9.0859375,
+    "meanResTime" : 60.04403124999986,
+    "medianResTime" : 60.0,
+    "minResTime" : 11.0,
+    "maxResTime" : 335.0,
+    "pct1ResTime" : 79.0,
+    "pct2ResTime" : 82.0,
+    "pct3ResTime" : 103.0,
+    "throughput" : 1619.1464062539528,
+    "receivedKBytesPerSec" : 161.81984288429427,
+    "sentKBytesPerSec" : 316.06401953095354
+  }
+}

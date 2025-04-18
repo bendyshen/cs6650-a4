@@ -1,0 +1,199 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
+  <diagram name="Page-1" id="zfyJxI_DZeL5Elnxxa-s">
+    <mxGraphModel dx="1270" dy="1666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-1" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(35, 47, 62), rgb(189, 199, 212));&quot;&gt;TCP Matchmaking Servers&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;Manages queuing system for match making&lt;/li&gt;&lt;li&gt;Manages TCP connections with all players in a match&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(35, 47, 62), rgb(189, 199, 212));&quot;&gt;(exchange account data, in game messages, etc.)&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;Manages match data cache&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(35, 47, 62), rgb(189, 199, 212));&quot;&gt;(writes / reads / deletes cached match data, including the player info, match ID, etc.)&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=left;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.instances;labelPosition=center;" parent="1" vertex="1">
+          <mxGeometry x="599.5" y="-397" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-2" value="UDP Gamestate Servers&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-size: 11px;&quot;&gt;Creates and manage matches&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-size: 11px;&quot;&gt;Manages game state for each match&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-size: 11px;&quot;&gt;Updates match data in the cache&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=middle;verticalAlign=middle;align=left;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.instances;labelPosition=right;" parent="1" vertex="1">
+          <mxGeometry x="599.5" y="-637" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-3" value="Match cache&lt;div&gt;(synchronization needed for concurrent writes)&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=left;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.cache_node;" parent="1" vertex="1">
+          <mxGeometry x="843.5" y="-530" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="aLVTF9wiwzfWBdr6-sXN-6" target="aLVTF9wiwzfWBdr6-sXN-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-5" value="Access different APIs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aLVTF9wiwzfWBdr6-sXN-4" vertex="1" connectable="0">
+          <mxGeometry x="-0.217" y="1" relative="1" as="geometry">
+            <mxPoint x="-19" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-6" value="Player" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.user;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" parent="1" vertex="1">
+          <mxGeometry x="340.04" y="-643" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-7" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" source="aLVTF9wiwzfWBdr6-sXN-6" target="aLVTF9wiwzfWBdr6-sXN-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="429.5" y="-557" as="sourcePoint" />
+            <mxPoint x="729.5" y="-298" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-8" value="TCP connection&lt;div&gt;(returns UDP endpoint&lt;/div&gt;&lt;div&gt;when match is found,&lt;/div&gt;&lt;div&gt;TCP connection is&lt;/div&gt;&lt;div&gt;maintained for various data&amp;nbsp;&lt;/div&gt;&lt;div&gt;transmission until match&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;data is persisted)&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aLVTF9wiwzfWBdr6-sXN-7" vertex="1" connectable="0">
+          <mxGeometry x="0.1349" y="3" relative="1" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-9" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" source="aLVTF9wiwzfWBdr6-sXN-3" target="aLVTF9wiwzfWBdr6-sXN-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1113" y="-451.9950807680584" as="sourcePoint" />
+            <mxPoint x="838.9000000000001" y="-204.71193538555332" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-10" value="Manages match cache lifecycle" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aLVTF9wiwzfWBdr6-sXN-9" vertex="1" connectable="0">
+          <mxGeometry x="0.1349" y="3" relative="1" as="geometry">
+            <mxPoint x="11" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-11" value="UDP connection" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" source="aLVTF9wiwzfWBdr6-sXN-6" target="aLVTF9wiwzfWBdr6-sXN-2" edge="1">
+          <mxGeometry x="-0.022" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="439.5" y="-627" as="sourcePoint" />
+            <mxPoint x="693.6" y="-758.9992663833593" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-12" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;startFill=1;endFill=1;" parent="1" source="aLVTF9wiwzfWBdr6-sXN-2" target="aLVTF9wiwzfWBdr6-sXN-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="742.5" y="-566.5" as="sourcePoint" />
+            <mxPoint x="742.5" y="-400.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-13" value="Writes / reads match data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aLVTF9wiwzfWBdr6-sXN-12" vertex="1" connectable="0">
+          <mxGeometry x="-0.172" y="-1" relative="1" as="geometry">
+            <mxPoint x="16" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-14" value="Database layer&lt;div&gt;(potential bottleneck)&lt;/div&gt;" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#C925D1;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.database;" parent="1" vertex="1">
+          <mxGeometry x="30" y="-275" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-15" value="" style="endArrow=classic;startArrow=none;html=1;rounded=0;startFill=0;endFill=1;" parent="1" source="aLVTF9wiwzfWBdr6-sXN-14" target="aLVTF9wiwzfWBdr6-sXN-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="179.5" y="-387" as="sourcePoint" />
+            <mxPoint x="224.52325581395326" y="-389" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-16" value="Reads player data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aLVTF9wiwzfWBdr6-sXN-15" vertex="1" connectable="0">
+          <mxGeometry x="0.1151" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-17" value="Creates player" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="39" y="-452" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-18" value="API gateway" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.api_gateway;labelPosition=center;" parent="1" vertex="1">
+          <mxGeometry x="34.5" y="-652" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-19" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="aLVTF9wiwzfWBdr6-sXN-17" target="aLVTF9wiwzfWBdr6-sXN-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="39.5" y="-357" as="sourcePoint" />
+            <mxPoint x="89.5" y="-407" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-20" value="Write new player" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aLVTF9wiwzfWBdr6-sXN-19" vertex="1" connectable="0">
+          <mxGeometry x="-0.2391" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-21" value="Authenticates player" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;labelPosition=center;" parent="1" vertex="1">
+          <mxGeometry x="169.5" y="-452" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-22" value="Redirects player&lt;div&gt;(based on player latency, ip, etc.)&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="335.53999999999996" y="-452" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-23" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="aLVTF9wiwzfWBdr6-sXN-18" target="aLVTF9wiwzfWBdr6-sXN-17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="39.5" y="-357" as="sourcePoint" />
+            <mxPoint x="-210.5" y="-597" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-24" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="aLVTF9wiwzfWBdr6-sXN-18" target="aLVTF9wiwzfWBdr6-sXN-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="39.5" y="-567" as="sourcePoint" />
+            <mxPoint x="-51.5" y="-483" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-25" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="aLVTF9wiwzfWBdr6-sXN-21" target="aLVTF9wiwzfWBdr6-sXN-22" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="79.5" y="-564" as="sourcePoint" />
+            <mxPoint x="82.5" y="-487" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-26" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aLVTF9wiwzfWBdr6-sXN-25" vertex="1" connectable="0">
+          <mxGeometry x="-0.13" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-27" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="aLVTF9wiwzfWBdr6-sXN-22" target="aLVTF9wiwzfWBdr6-sXN-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="39.5" y="-357" as="sourcePoint" />
+            <mxPoint x="89.5" y="-407" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-28" value="Returns TCP endpoint" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aLVTF9wiwzfWBdr6-sXN-27" vertex="1" connectable="0">
+          <mxGeometry x="-0.2077" y="3" relative="1" as="geometry">
+            <mxPoint x="4" y="19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-29" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="aLVTF9wiwzfWBdr6-sXN-21" target="aLVTF9wiwzfWBdr6-sXN-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="309.5" y="-387" as="sourcePoint" />
+            <mxPoint x="359.5" y="-437" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-30" value="Rejects request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aLVTF9wiwzfWBdr6-sXN-29" vertex="1" connectable="0">
+          <mxGeometry x="-0.3601" y="-1" relative="1" as="geometry">
+            <mxPoint x="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-31" value="false" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aLVTF9wiwzfWBdr6-sXN-29" vertex="1" connectable="0">
+          <mxGeometry x="-0.7029" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-33" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="aLVTF9wiwzfWBdr6-sXN-1" target="jRkC05F-JBWfZ0bTOkTH-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="169.5" y="-42" as="sourcePoint" />
+            <mxPoint x="207.5" y="-198" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-34" value="Publishes match data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aLVTF9wiwzfWBdr6-sXN-33" vertex="1" connectable="0">
+          <mxGeometry x="-0.1044" relative="1" as="geometry">
+            <mxPoint x="-50" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-35" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="jRkC05F-JBWfZ0bTOkTH-3" target="aLVTF9wiwzfWBdr6-sXN-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="79.5" y="-252" as="sourcePoint" />
+            <mxPoint x="219.5" y="-272" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLVTF9wiwzfWBdr6-sXN-36" value="Persists match data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="aLVTF9wiwzfWBdr6-sXN-35" vertex="1" connectable="0">
+          <mxGeometry x="-0.2601" relative="1" as="geometry">
+            <mxPoint x="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jRkC05F-JBWfZ0bTOkTH-1" value="Redis cache / broker" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=left;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.cache_node;" parent="1" vertex="1">
+          <mxGeometry x="449.5" y="-275" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="jRkC05F-JBWfZ0bTOkTH-3" value="Data persistence service" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="238.5" y="-272" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="jRkC05F-JBWfZ0bTOkTH-4" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="jRkC05F-JBWfZ0bTOkTH-1" target="jRkC05F-JBWfZ0bTOkTH-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="519.5" y="-122" as="sourcePoint" />
+            <mxPoint x="389.5" y="-122" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jRkC05F-JBWfZ0bTOkTH-5" value="Reads from cache" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="jRkC05F-JBWfZ0bTOkTH-4" vertex="1" connectable="0">
+          <mxGeometry x="-0.2601" relative="1" as="geometry">
+            <mxPoint x="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2qYVwyag_esVtmRlizPO-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;A MOBA game system design&lt;/h1&gt;&lt;div&gt;1. Player: HTTPS for login, TCP socket with&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;SSL encryption&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;for match making, UDP socket for game state communication, graphic rendering&lt;/span&gt;&lt;/div&gt;&lt;div&gt;2. API gateway: HTTPS endpoints that handle player account creation, player account verification and player redirection for matchmaking using TCP connections&lt;/div&gt;&lt;div&gt;3. TCP server:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;consumer-producer pattern with priority queue for match making,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;multithreaded match manager, broadcasts in game messages, exchange important account related data&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;4. UDP server: consumer-producer pattern, broadcast each player&#39;s game state data to all the other players in the same match, handles&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;game state validation (spell casts, hit, etc.)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;5. Cache: Redis cache cluster&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;6. Database: MongoDB cluster&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-160" width="1070" height="155" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

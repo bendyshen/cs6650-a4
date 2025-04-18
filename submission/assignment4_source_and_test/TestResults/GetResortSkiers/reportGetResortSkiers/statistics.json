@@ -1,0 +1,34 @@
+{
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 64000,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 63.15003124999956,
+    "medianResTime" : 60.0,
+    "minResTime" : 11.0,
+    "maxResTime" : 1087.0,
+    "pct1ResTime" : 80.0,
+    "pct2ResTime" : 88.0,
+    "pct3ResTime" : 209.9900000000016,
+    "throughput" : 1546.6035136898577,
+    "receivedKBytesPerSec" : 154.05620937145068,
+    "sentKBytesPerSec" : 291.49851381068606
+  },
+  "GetResortSkiers" : {
+    "transaction" : "GetResortSkiers",
+    "sampleCount" : 64000,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 63.15003124999956,
+    "medianResTime" : 60.0,
+    "minResTime" : 11.0,
+    "maxResTime" : 1087.0,
+    "pct1ResTime" : 80.0,
+    "pct2ResTime" : 88.0,
+    "pct3ResTime" : 209.9900000000016,
+    "throughput" : 1546.6035136898577,
+    "receivedKBytesPerSec" : 154.05620937145068,
+    "sentKBytesPerSec" : 291.49851381068606
+  }
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>RabbitMQConsumer</groupId>
+  <artifactId>RabbitMQConsumer</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <swagger-client-version>1.0.0</swagger-client-version>
+    <amqp-client-version>5.16.0</amqp-client-version>
+    <logback-client-version>1.2.11</logback-client-version>
+    <slf4j-api-version>1.7.36</slf4j-api-version>
+    <commons-pool2-version>2.11.1</commons-pool2-version>
+    <jedis-client-version>4.0.1</jedis-client-version> <!-- 4.0.0 for pipeline.xadd()-->
+    <maven-jar-plugin-version>3.2.2</maven-jar-plugin-version>
+    <maven-shade-plugin-version>3.4.1</maven-shade-plugin-version>
+    <mongodb-version>4.5.0</mongodb-version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.swagger</groupId>
+      <artifactId>swagger-java-client</artifactId>
+      <version>${swagger-client-version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.rabbitmq</groupId>
+      <artifactId>amqp-client</artifactId>
+      <version>${amqp-client-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback-client-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j-api-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-pool2</artifactId>
+      <version>${commons-pool2-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>${jedis-client-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>mongodb-driver-sync</artifactId>
+      <version>${mongodb-version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>${maven-jar-plugin-version}</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.upic.ConsumerRunner</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>${maven-shade-plugin-version}</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
